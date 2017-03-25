@@ -35,6 +35,7 @@
 		79FCC41F1E86FC3E00599F31 /* ACCPhotoGroupDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC41E1E86FC3E00599F31 /* ACCPhotoGroupDataModel.m */; };
 		79FCC4241E87103200599F31 /* ACCListingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC4231E87103200599F31 /* ACCListingTableViewCell.m */; };
 		79FCC4281E8714A800599F31 /* ACCListingRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC4271E8714A800599F31 /* ACCListingRatingView.m */; };
+		79FCC42F1E871D8000599F31 /* ACCAppearanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC42E1E871D8000599F31 /* ACCAppearanceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,8 @@
 		79FCC4231E87103200599F31 /* ACCListingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCListingTableViewCell.m; path = Modules/ListingModule/View/ACCListingTableViewCell/ACCListingTableViewCell.m; sourceTree = "<group>"; };
 		79FCC4261E8714A800599F31 /* ACCListingRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCListingRatingView.h; path = Modules/ListingModule/View/ACCListingRatingView/ACCListingRatingView.h; sourceTree = "<group>"; };
 		79FCC4271E8714A800599F31 /* ACCListingRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCListingRatingView.m; path = Modules/ListingModule/View/ACCListingRatingView/ACCListingRatingView.m; sourceTree = "<group>"; };
+		79FCC42D1E871D8000599F31 /* ACCAppearanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCAppearanceController.h; sourceTree = "<group>"; };
+		79FCC42E1E871D8000599F31 /* ACCAppearanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCAppearanceController.m; sourceTree = "<group>"; };
 		CF287026FFDBB874EF713561 /* Pods-ACCApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACCApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACCApp/Pods-ACCApp.release.xcconfig"; sourceTree = "<group>"; };
 		E58E55B6FF0C41C15DBFEEC4 /* libPods-ACCApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ACCApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9EF29AB0199A1DA44A06160 /* Pods-ACCApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACCApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACCApp/Pods-ACCApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -334,16 +337,9 @@
 		79001F881E86779900436D56 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				79001F891E8677A500436D56 /* AppearanceController */,
+				79FCC42C1E871D8000599F31 /* AppearanceController */,
 			);
 			name = Controllers;
-			sourceTree = "<group>";
-		};
-		79001F891E8677A500436D56 /* AppearanceController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = AppearanceController;
 			sourceTree = "<group>";
 		};
 		79001F8A1E86788500436D56 /* ListingViewController */ = {
@@ -503,6 +499,16 @@
 				79FCC4271E8714A800599F31 /* ACCListingRatingView.m */,
 			);
 			name = ACCListingRatingView;
+			sourceTree = "<group>";
+		};
+		79FCC42C1E871D8000599F31 /* AppearanceController */ = {
+			isa = PBXGroup;
+			children = (
+				79FCC42D1E871D8000599F31 /* ACCAppearanceController.h */,
+				79FCC42E1E871D8000599F31 /* ACCAppearanceController.m */,
+			);
+			name = AppearanceController;
+			path = Core/Controller/AppearanceController;
 			sourceTree = "<group>";
 		};
 		9E8BBCFE0769C93C56FB88CA /* Pods */ = {
@@ -676,6 +682,7 @@
 				79FCC4241E87103200599F31 /* ACCListingTableViewCell.m in Sources */,
 				79FCC40D1E86EDD300599F31 /* ACCPhotoDataModel.m in Sources */,
 				79FCC41B1E86FAF200599F31 /* ACCVenueGroupDataModel.m in Sources */,
+				79FCC42F1E871D8000599F31 /* ACCAppearanceController.m in Sources */,
 				79001F531E86722600436D56 /* AppDelegate.m in Sources */,
 				79FCC4131E86F27F00599F31 /* ACCBaseDataModel.m in Sources */,
 				79FCC4171E86F65800599F31 /* ACCVenueExploreDataModel.m in Sources */,

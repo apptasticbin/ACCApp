@@ -12,6 +12,7 @@
 #import "ACCListingPresenter.h"
 #import "ACCLocationService.h"
 #import "ACCHttpService.h"
+#import "ACCAppearanceController.h"
 #import "UIStoryboard+Helper.h"
 
 @interface AppDelegate ()
@@ -21,18 +22,27 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [self createMainViewController];
-    [self.window makeKeyAndVisible];
+    [self p_setupWindow];
+    [self p_setupAppearance];
     return YES;
 }
 
-- (ACCMainViewController *)createMainViewController {
-    ACCListingViewController *listingViewController = [self createListingViewController];
+- (void)p_setupWindow {
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [self p_createMainViewController];
+    [self.window makeKeyAndVisible];
+}
+
+- (void)p_setupAppearance {
+    [ACCAppearanceController setupApplicationAppearance];
+}
+
+- (ACCMainViewController *)p_createMainViewController {
+    ACCListingViewController *listingViewController = [self p_createListingViewController];
     return [[ACCMainViewController alloc] initWithRootViewController:listingViewController];
 }
 
-- (ACCListingViewController *)createListingViewController {
+- (ACCListingViewController *)p_createListingViewController {
     ACCListingPresenter *listingPresenter = [ACCListingPresenter new];
     ACCListingViewController *listingViewController =
     [UIStoryboard instantiateViewControllerWithId:@"ACCListingViewController"

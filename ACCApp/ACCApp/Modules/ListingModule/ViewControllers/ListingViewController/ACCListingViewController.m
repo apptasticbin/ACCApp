@@ -60,6 +60,7 @@ static NSString *ACCListingViewControllerCellId = @"ACCListingViewControllerCell
     [self.refreshControl addTarget:self
                             action:@selector(p_pullToRefresh)
                   forControlEvents:UIControlEventValueChanged];
+    self.title = @"ACCApp";
 }
 
 - (void)p_loadNearbyVenues {
