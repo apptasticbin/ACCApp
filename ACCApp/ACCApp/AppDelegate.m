@@ -31,12 +31,20 @@
 
 - (ACCListingViewController *)createListingViewController {
     ACCListingPresenter *listingPresenter = [ACCListingPresenter new];
-    ACCListingViewController *listingViewController = [ACCListingViewController new];
+    ACCListingViewController *listingViewController =
+    [self instantiateViewControllerWithId:@"ACCListingViewController" inStoryboard:@"Main"];
     
     [listingPresenter setView:(id)listingViewController];
     [listingViewController setPresenter:(id)listingPresenter];
     
     return listingViewController;
+}
+
+- (__kindof UIViewController *)instantiateViewControllerWithId:(NSString *)viewControllerId
+                                                  inStoryboard:(NSString *)storyboardName {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName
+                                                         bundle:[NSBundle mainBundle]];
+    return [storyboard instantiateViewControllerWithIdentifier:viewControllerId];
 }
 
 @end
