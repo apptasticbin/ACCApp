@@ -18,12 +18,4 @@
 
 @implementation ACCListingViewController
 
-- (instancetype)initWithPresenter:(id<IACCListingPresenter>)presenter {
-    self = [super init];
-    if (self) {
-        _presenter = presenter;
-    }
-    return self;
-}
-
 @end

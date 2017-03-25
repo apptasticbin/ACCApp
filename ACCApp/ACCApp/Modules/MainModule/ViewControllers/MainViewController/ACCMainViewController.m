@@ -6,13 +6,13 @@
 //  Copyright © 2017 Bin Yu. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "ACCMainViewController.h"
 
-@interface MainViewController ()
+@interface ACCMainViewController ()
 
 @end
 
-@implementation MainViewController
+@implementation ACCMainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

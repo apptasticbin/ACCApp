@@ -12,6 +12,6 @@
 
 @interface ACCListingViewController : UITableViewController
 
-- (instancetype)initWithPresenter:(id<IACCListingPresenter>)presenter;
+- (void)setPresenter:(id<IACCListingPresenter>)presenter;
 
 @end

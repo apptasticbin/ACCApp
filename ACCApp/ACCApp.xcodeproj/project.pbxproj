@@ -17,8 +17,8 @@
 		79001F911E86791700436D56 /* ACCListingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79001F8F1E86791700436D56 /* ACCListingViewController.m */; };
 		79001F971E867D1000436D56 /* ACCListingPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 79001F961E867D1000436D56 /* ACCListingPresenter.m */; };
 		79001F981E867D1000436D56 /* ACCListingPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 79001F961E867D1000436D56 /* ACCListingPresenter.m */; };
-		79001FA01E8687EF00436D56 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79001F9F1E8687EF00436D56 /* MainViewController.m */; };
-		79001FA11E8687EF00436D56 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79001F9F1E8687EF00436D56 /* MainViewController.m */; };
+		79001FA01E8687EF00436D56 /* ACCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79001F9F1E8687EF00436D56 /* ACCMainViewController.m */; };
+		79001FA11E8687EF00436D56 /* ACCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79001F9F1E8687EF00436D56 /* ACCMainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +49,8 @@
 		79001F931E867AC800436D56 /* IACCListingPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IACCListingPresenter.h; path = Modules/ListingModule/Interfaces/IACCListingPresenter.h; sourceTree = "<group>"; };
 		79001F951E867D1000436D56 /* ACCListingPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCListingPresenter.h; path = Modules/ListingModule/Presenters/ACCListingPresenter.h; sourceTree = "<group>"; };
 		79001F961E867D1000436D56 /* ACCListingPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCListingPresenter.m; path = Modules/ListingModule/Presenters/ACCListingPresenter.m; sourceTree = "<group>"; };
-		79001F9E1E8687EF00436D56 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Modules/MainModule/ViewControllers/MainViewController/MainViewController.h; sourceTree = "<group>"; };
-		79001F9F1E8687EF00436D56 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Modules/MainModule/ViewControllers/MainViewController/MainViewController.m; sourceTree = "<group>"; };
+		79001F9E1E8687EF00436D56 /* ACCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCMainViewController.h; path = Modules/MainModule/ViewControllers/MainViewController/ACCMainViewController.h; sourceTree = "<group>"; };
+		79001F9F1E8687EF00436D56 /* ACCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCMainViewController.m; path = Modules/MainModule/ViewControllers/MainViewController/ACCMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,8 +330,8 @@
 		79001F9D1E86879C00436D56 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
-				79001F9E1E8687EF00436D56 /* MainViewController.h */,
-				79001F9F1E8687EF00436D56 /* MainViewController.m */,
+				79001F9E1E8687EF00436D56 /* ACCMainViewController.h */,
+				79001F9F1E8687EF00436D56 /* ACCMainViewController.m */,
 			);
 			name = MainViewController;
 			sourceTree = "<group>";
@@ -443,7 +443,7 @@
 				79001F901E86791700436D56 /* ACCListingViewController.m in Sources */,
 				79001F971E867D1000436D56 /* ACCListingPresenter.m in Sources */,
 				79001F531E86722600436D56 /* AppDelegate.m in Sources */,
-				79001FA01E8687EF00436D56 /* MainViewController.m in Sources */,
+				79001FA01E8687EF00436D56 /* ACCMainViewController.m in Sources */,
 				79001F501E86722600436D56 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,7 +455,7 @@
 				79001F981E867D1000436D56 /* ACCListingPresenter.m in Sources */,
 				79001F691E86722600436D56 /* ACCAppTests.m in Sources */,
 				79001F911E86791700436D56 /* ACCListingViewController.m in Sources */,
-				79001FA11E8687EF00436D56 /* MainViewController.m in Sources */,
+				79001FA11E8687EF00436D56 /* ACCMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

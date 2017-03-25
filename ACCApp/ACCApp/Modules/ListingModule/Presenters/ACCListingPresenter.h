@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol IACCListingView;
+
 @interface ACCListingPresenter : NSObject
+
+- (void)setView:(id<IACCListingView>)view;
 
 @end
