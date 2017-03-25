@@ -6,11 +6,11 @@
 //  Copyright © 2017 Bin Yu. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @protocol IACCListingPresenter;
 
-@interface ACCListingViewController : NSObject
+@interface ACCListingViewController : UITableViewController
 
 - (instancetype)initWithPresenter:(id<IACCListingPresenter>)presenter;
 
