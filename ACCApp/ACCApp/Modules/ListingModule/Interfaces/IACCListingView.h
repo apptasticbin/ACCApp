@@ -6,6 +6,10 @@
 //  Copyright © 2017 Bin Yu. All rights reserved.
 //
 
+@class ACCVenueDataModel;
+
 @protocol IACCListingView <NSObject>
+
+- (void)nearbyVenuesLoaded:(NSArray<ACCVenueDataModel *> *)venues;
 
 @end

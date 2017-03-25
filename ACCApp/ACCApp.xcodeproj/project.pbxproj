@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		405AAACE1B69FAAF69A17810 /* libPods-ACCApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E58E55B6FF0C41C15DBFEEC4 /* libPods-ACCApp.a */; };
 		79001F501E86722600436D56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79001F4F1E86722600436D56 /* main.m */; };
 		79001F531E86722600436D56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79001F521E86722600436D56 /* AppDelegate.m */; };
 		79001F591E86722600436D56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79001F571E86722600436D56 /* Main.storyboard */; };
@@ -21,6 +22,19 @@
 		79001FA11E8687EF00436D56 /* ACCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79001F9F1E8687EF00436D56 /* ACCMainViewController.m */; };
 		79001FAE1E86A3D400436D56 /* UIStoryboard+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 79001FAD1E86A3D400436D56 /* UIStoryboard+Helper.m */; };
 		79001FAF1E86A3D400436D56 /* UIStoryboard+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 79001FAD1E86A3D400436D56 /* UIStoryboard+Helper.m */; };
+		79001FB31E86A83C00436D56 /* ACCLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 79001FB21E86A83C00436D56 /* ACCLocationService.m */; };
+		79001FB41E86A83C00436D56 /* ACCLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 79001FB21E86A83C00436D56 /* ACCLocationService.m */; };
+		79001FB71E86A8C400436D56 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79001FB61E86A8C400436D56 /* CoreLocation.framework */; };
+		79001FBB1E86BA6F00436D56 /* ACCHttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = 79001FBA1E86BA6F00436D56 /* ACCHttpService.m */; };
+		79001FBC1E86BA6F00436D56 /* ACCHttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = 79001FBA1E86BA6F00436D56 /* ACCHttpService.m */; };
+		79FCC4091E86D9F800599F31 /* ACCVenueDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC4081E86D9F800599F31 /* ACCVenueDataModel.m */; };
+		79FCC40D1E86EDD300599F31 /* ACCPhotoDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC40C1E86EDD300599F31 /* ACCPhotoDataModel.m */; };
+		79FCC4131E86F27F00599F31 /* ACCBaseDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC4121E86F27F00599F31 /* ACCBaseDataModel.m */; };
+		79FCC4171E86F65800599F31 /* ACCVenueExploreDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC4161E86F65800599F31 /* ACCVenueExploreDataModel.m */; };
+		79FCC41B1E86FAF200599F31 /* ACCVenueGroupDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC41A1E86FAF200599F31 /* ACCVenueGroupDataModel.m */; };
+		79FCC41F1E86FC3E00599F31 /* ACCPhotoGroupDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC41E1E86FC3E00599F31 /* ACCPhotoGroupDataModel.m */; };
+		79FCC4241E87103200599F31 /* ACCListingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC4231E87103200599F31 /* ACCListingTableViewCell.m */; };
+		79FCC4281E8714A800599F31 /* ACCListingRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC4271E8714A800599F31 /* ACCListingRatingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +69,32 @@
 		79001F9F1E8687EF00436D56 /* ACCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCMainViewController.m; path = Modules/MainModule/ViewControllers/MainViewController/ACCMainViewController.m; sourceTree = "<group>"; };
 		79001FAC1E86A3D400436D56 /* UIStoryboard+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIStoryboard+Helper.h"; path = "Core/Categories/UIStoryboard+Helper.h"; sourceTree = "<group>"; };
 		79001FAD1E86A3D400436D56 /* UIStoryboard+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIStoryboard+Helper.m"; path = "Core/Categories/UIStoryboard+Helper.m"; sourceTree = "<group>"; };
+		79001FB11E86A83C00436D56 /* ACCLocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCLocationService.h; path = Core/Services/LocationService/ACCLocationService.h; sourceTree = "<group>"; };
+		79001FB21E86A83C00436D56 /* ACCLocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCLocationService.m; path = Core/Services/LocationService/ACCLocationService.m; sourceTree = "<group>"; };
+		79001FB61E86A8C400436D56 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		79001FB81E86AA2A00436D56 /* IACCLocationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IACCLocationService.h; path = Core/Services/Interfaces/IACCLocationService.h; sourceTree = "<group>"; };
+		79001FB91E86BA6F00436D56 /* ACCHttpService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCHttpService.h; path = Core/Services/HttpService/ACCHttpService.h; sourceTree = "<group>"; };
+		79001FBA1E86BA6F00436D56 /* ACCHttpService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCHttpService.m; path = Core/Services/HttpService/ACCHttpService.m; sourceTree = "<group>"; };
+		79001FBD1E86BA9200436D56 /* IACCHttpService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IACCHttpService.h; path = Core/Services/Interfaces/IACCHttpService.h; sourceTree = "<group>"; };
+		79FCC4071E86D9F800599F31 /* ACCVenueDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCVenueDataModel.h; path = Modules/ListingModule/DataModels/ACCVenueDataModel/ACCVenueDataModel.h; sourceTree = "<group>"; };
+		79FCC4081E86D9F800599F31 /* ACCVenueDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCVenueDataModel.m; path = Modules/ListingModule/DataModels/ACCVenueDataModel/ACCVenueDataModel.m; sourceTree = "<group>"; };
+		79FCC40B1E86EDD300599F31 /* ACCPhotoDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCPhotoDataModel.h; path = Modules/ListingModule/DataModels/ACCPhotoDataModel/ACCPhotoDataModel.h; sourceTree = "<group>"; };
+		79FCC40C1E86EDD300599F31 /* ACCPhotoDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCPhotoDataModel.m; path = Modules/ListingModule/DataModels/ACCPhotoDataModel/ACCPhotoDataModel.m; sourceTree = "<group>"; };
+		79FCC4111E86F27F00599F31 /* ACCBaseDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCBaseDataModel.h; path = Core/DataModels/ACCBaseDataModel/ACCBaseDataModel.h; sourceTree = "<group>"; };
+		79FCC4121E86F27F00599F31 /* ACCBaseDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCBaseDataModel.m; path = Core/DataModels/ACCBaseDataModel/ACCBaseDataModel.m; sourceTree = "<group>"; };
+		79FCC4151E86F65800599F31 /* ACCVenueExploreDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCVenueExploreDataModel.h; path = Modules/ListingModule/DataModels/ACCVenueExploreDataModel/ACCVenueExploreDataModel.h; sourceTree = "<group>"; };
+		79FCC4161E86F65800599F31 /* ACCVenueExploreDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCVenueExploreDataModel.m; path = Modules/ListingModule/DataModels/ACCVenueExploreDataModel/ACCVenueExploreDataModel.m; sourceTree = "<group>"; };
+		79FCC4191E86FAF200599F31 /* ACCVenueGroupDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCVenueGroupDataModel.h; path = Modules/ListingModule/DataModels/ACCVenueGroupDataModel/ACCVenueGroupDataModel.h; sourceTree = "<group>"; };
+		79FCC41A1E86FAF200599F31 /* ACCVenueGroupDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCVenueGroupDataModel.m; path = Modules/ListingModule/DataModels/ACCVenueGroupDataModel/ACCVenueGroupDataModel.m; sourceTree = "<group>"; };
+		79FCC41D1E86FC3E00599F31 /* ACCPhotoGroupDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCPhotoGroupDataModel.h; path = Modules/ListingModule/DataModels/ACCPhotoGroupDataModel/ACCPhotoGroupDataModel.h; sourceTree = "<group>"; };
+		79FCC41E1E86FC3E00599F31 /* ACCPhotoGroupDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCPhotoGroupDataModel.m; path = Modules/ListingModule/DataModels/ACCPhotoGroupDataModel/ACCPhotoGroupDataModel.m; sourceTree = "<group>"; };
+		79FCC4221E87103200599F31 /* ACCListingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCListingTableViewCell.h; path = Modules/ListingModule/View/ACCListingTableViewCell/ACCListingTableViewCell.h; sourceTree = "<group>"; };
+		79FCC4231E87103200599F31 /* ACCListingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCListingTableViewCell.m; path = Modules/ListingModule/View/ACCListingTableViewCell/ACCListingTableViewCell.m; sourceTree = "<group>"; };
+		79FCC4261E8714A800599F31 /* ACCListingRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCListingRatingView.h; path = Modules/ListingModule/View/ACCListingRatingView/ACCListingRatingView.h; sourceTree = "<group>"; };
+		79FCC4271E8714A800599F31 /* ACCListingRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCListingRatingView.m; path = Modules/ListingModule/View/ACCListingRatingView/ACCListingRatingView.m; sourceTree = "<group>"; };
+		CF287026FFDBB874EF713561 /* Pods-ACCApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACCApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACCApp/Pods-ACCApp.release.xcconfig"; sourceTree = "<group>"; };
+		E58E55B6FF0C41C15DBFEEC4 /* libPods-ACCApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ACCApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9EF29AB0199A1DA44A06160 /* Pods-ACCApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACCApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACCApp/Pods-ACCApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +102,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79001FB71E86A8C400436D56 /* CoreLocation.framework in Frameworks */,
+				405AAACE1B69FAAF69A17810 /* libPods-ACCApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +123,8 @@
 				79001F4D1E86722600436D56 /* ACCApp */,
 				79001F671E86722600436D56 /* ACCAppTests */,
 				79001F4C1E86722600436D56 /* Products */,
+				79001FB51E86A8C400436D56 /* Frameworks */,
+				9E8BBCFE0769C93C56FB88CA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,7 +179,7 @@
 		79001F751E8673A200436D56 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				79001F871E86768500436D56 /* DataModels */,
+				79001FB01E86A73600436D56 /* Interfaces */,
 				79001F841E8675AD00436D56 /* CacheService */,
 				79001F771E8673E600436D56 /* HttpService */,
 				79001F781E8673F400436D56 /* LocationService */,
@@ -155,6 +199,8 @@
 		79001F771E8673E600436D56 /* HttpService */ = {
 			isa = PBXGroup;
 			children = (
+				79001FB91E86BA6F00436D56 /* ACCHttpService.h */,
+				79001FBA1E86BA6F00436D56 /* ACCHttpService.m */,
 			);
 			name = HttpService;
 			sourceTree = "<group>";
@@ -162,6 +208,8 @@
 		79001F781E8673F400436D56 /* LocationService */ = {
 			isa = PBXGroup;
 			children = (
+				79001FB11E86A83C00436D56 /* ACCLocationService.h */,
+				79001FB21E86A83C00436D56 /* ACCLocationService.m */,
 			);
 			name = LocationService;
 			sourceTree = "<group>";
@@ -172,6 +220,7 @@
 				79001F7E1E8674CD00436D56 /* DataModels */,
 				79001F811E86758100436D56 /* Interfaces */,
 				79001F7F1E86751A00436D56 /* Presenters */,
+				79FCC4201E870FF300599F31 /* View */,
 				79001F7D1E8674A700436D56 /* ViewControllers */,
 			);
 			name = ListingModule;
@@ -217,6 +266,11 @@
 		79001F7E1E8674CD00436D56 /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
+				79FCC40A1E86EDA500599F31 /* ACCPhotoDataModel */,
+				79FCC41C1E86FC0700599F31 /* ACCPhotoGroupDataModel */,
+				79FCC4061E86D7BB00599F31 /* ACCVenueDataModel */,
+				79FCC4141E86F62600599F31 /* ACCVenueExploreDataModel */,
+				79FCC4181E86FABD00599F31 /* ACCVenueGroupDataModel */,
 			);
 			name = DataModels;
 			sourceTree = "<group>";
@@ -269,18 +323,12 @@
 		79001F861E86767600436D56 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				79FCC40F1E86F24D00599F31 /* DataModels */,
 				79001FAB1E86A33D00436D56 /* Categories */,
 				79001F881E86779900436D56 /* Controllers */,
 				79001F751E8673A200436D56 /* Services */,
 			);
 			name = Core;
-			sourceTree = "<group>";
-		};
-		79001F871E86768500436D56 /* DataModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = DataModels;
 			sourceTree = "<group>";
 		};
 		79001F881E86779900436D56 /* Controllers */ = {
@@ -350,6 +398,122 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
+		79001FB01E86A73600436D56 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				79001FB81E86AA2A00436D56 /* IACCLocationService.h */,
+				79001FBD1E86BA9200436D56 /* IACCHttpService.h */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		79001FB51E86A8C400436D56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79001FB61E86A8C400436D56 /* CoreLocation.framework */,
+				E58E55B6FF0C41C15DBFEEC4 /* libPods-ACCApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79FCC4061E86D7BB00599F31 /* ACCVenueDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				79FCC4071E86D9F800599F31 /* ACCVenueDataModel.h */,
+				79FCC4081E86D9F800599F31 /* ACCVenueDataModel.m */,
+			);
+			name = ACCVenueDataModel;
+			sourceTree = "<group>";
+		};
+		79FCC40A1E86EDA500599F31 /* ACCPhotoDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				79FCC40B1E86EDD300599F31 /* ACCPhotoDataModel.h */,
+				79FCC40C1E86EDD300599F31 /* ACCPhotoDataModel.m */,
+			);
+			name = ACCPhotoDataModel;
+			sourceTree = "<group>";
+		};
+		79FCC40F1E86F24D00599F31 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				79FCC4101E86F25B00599F31 /* ACCBaseDataModel */,
+			);
+			name = DataModels;
+			sourceTree = "<group>";
+		};
+		79FCC4101E86F25B00599F31 /* ACCBaseDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				79FCC4111E86F27F00599F31 /* ACCBaseDataModel.h */,
+				79FCC4121E86F27F00599F31 /* ACCBaseDataModel.m */,
+			);
+			name = ACCBaseDataModel;
+			sourceTree = "<group>";
+		};
+		79FCC4141E86F62600599F31 /* ACCVenueExploreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				79FCC4151E86F65800599F31 /* ACCVenueExploreDataModel.h */,
+				79FCC4161E86F65800599F31 /* ACCVenueExploreDataModel.m */,
+			);
+			name = ACCVenueExploreDataModel;
+			sourceTree = "<group>";
+		};
+		79FCC4181E86FABD00599F31 /* ACCVenueGroupDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				79FCC4191E86FAF200599F31 /* ACCVenueGroupDataModel.h */,
+				79FCC41A1E86FAF200599F31 /* ACCVenueGroupDataModel.m */,
+			);
+			name = ACCVenueGroupDataModel;
+			sourceTree = "<group>";
+		};
+		79FCC41C1E86FC0700599F31 /* ACCPhotoGroupDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				79FCC41D1E86FC3E00599F31 /* ACCPhotoGroupDataModel.h */,
+				79FCC41E1E86FC3E00599F31 /* ACCPhotoGroupDataModel.m */,
+			);
+			name = ACCPhotoGroupDataModel;
+			sourceTree = "<group>";
+		};
+		79FCC4201E870FF300599F31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79FCC4251E87146400599F31 /* ACCListingRatingView */,
+				79FCC4211E870FFA00599F31 /* ACCListingTableViewCell */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		79FCC4211E870FFA00599F31 /* ACCListingTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				79FCC4221E87103200599F31 /* ACCListingTableViewCell.h */,
+				79FCC4231E87103200599F31 /* ACCListingTableViewCell.m */,
+			);
+			name = ACCListingTableViewCell;
+			sourceTree = "<group>";
+		};
+		79FCC4251E87146400599F31 /* ACCListingRatingView */ = {
+			isa = PBXGroup;
+			children = (
+				79FCC4261E8714A800599F31 /* ACCListingRatingView.h */,
+				79FCC4271E8714A800599F31 /* ACCListingRatingView.m */,
+			);
+			name = ACCListingRatingView;
+			sourceTree = "<group>";
+		};
+		9E8BBCFE0769C93C56FB88CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9EF29AB0199A1DA44A06160 /* Pods-ACCApp.debug.xcconfig */,
+				CF287026FFDBB874EF713561 /* Pods-ACCApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -357,9 +521,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79001F6D1E86722600436D56 /* Build configuration list for PBXNativeTarget "ACCApp" */;
 			buildPhases = (
+				A6530BD7AD1509B95D3B0730 /* [CP] Check Pods Manifest.lock */,
 				79001F471E86722500436D56 /* Sources */,
 				79001F481E86722500436D56 /* Frameworks */,
 				79001F491E86722500436D56 /* Resources */,
+				680F29FE415B82BEA1297BFF /* [CP] Embed Pods Frameworks */,
+				C750C80A7EF7109015F3B0DB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -449,16 +616,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		680F29FE415B82BEA1297BFF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ACCApp/Pods-ACCApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6530BD7AD1509B95D3B0730 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C750C80A7EF7109015F3B0DB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ACCApp/Pods-ACCApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		79001F471E86722500436D56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79FCC41F1E86FC3E00599F31 /* ACCPhotoGroupDataModel.m in Sources */,
 				79001F901E86791700436D56 /* ACCListingViewController.m in Sources */,
+				79FCC4281E8714A800599F31 /* ACCListingRatingView.m in Sources */,
 				79001F971E867D1000436D56 /* ACCListingPresenter.m in Sources */,
+				79FCC4241E87103200599F31 /* ACCListingTableViewCell.m in Sources */,
+				79FCC40D1E86EDD300599F31 /* ACCPhotoDataModel.m in Sources */,
+				79FCC41B1E86FAF200599F31 /* ACCVenueGroupDataModel.m in Sources */,
 				79001F531E86722600436D56 /* AppDelegate.m in Sources */,
+				79FCC4131E86F27F00599F31 /* ACCBaseDataModel.m in Sources */,
+				79FCC4171E86F65800599F31 /* ACCVenueExploreDataModel.m in Sources */,
+				79001FBB1E86BA6F00436D56 /* ACCHttpService.m in Sources */,
 				79001FA01E8687EF00436D56 /* ACCMainViewController.m in Sources */,
 				79001FAE1E86A3D400436D56 /* UIStoryboard+Helper.m in Sources */,
+				79FCC4091E86D9F800599F31 /* ACCVenueDataModel.m in Sources */,
+				79001FB31E86A83C00436D56 /* ACCLocationService.m in Sources */,
 				79001F501E86722600436D56 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +696,8 @@
 				79001FAF1E86A3D400436D56 /* UIStoryboard+Helper.m in Sources */,
 				79001F691E86722600436D56 /* ACCAppTests.m in Sources */,
 				79001F911E86791700436D56 /* ACCListingViewController.m in Sources */,
+				79001FBC1E86BA6F00436D56 /* ACCHttpService.m in Sources */,
+				79001FB41E86A83C00436D56 /* ACCLocationService.m in Sources */,
 				79001FA11E8687EF00436D56 /* ACCMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -595,6 +822,7 @@
 		};
 		79001F6E1E86722600436D56 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9EF29AB0199A1DA44A06160 /* Pods-ACCApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8BMD2QL62M;
@@ -607,6 +835,7 @@
 		};
 		79001F6F1E86722600436D56 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF287026FFDBB874EF713561 /* Pods-ACCApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8BMD2QL62M;
@@ -662,6 +891,7 @@
 				79001F6F1E86722600436D56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79001F701E86722600436D56 /* Build configuration list for PBXNativeTarget "ACCAppTests" */ = {
 			isa = XCConfigurationList;
@@ -670,6 +900,7 @@
 				79001F721E86722600436D56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,5 +1,5 @@
 //
-//  MainViewController.m
+//  ACCMainViewController.m
 //  ACCApp
 //
 //  Created by Bin Yu on 25/03/2017.

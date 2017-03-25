@@ -9,9 +9,13 @@
 #import <Foundation/Foundation.h>
 
 @protocol IACCListingView;
+@protocol IACCLocationService;
+@protocol IACCHttpService;
 
 @interface ACCListingPresenter : NSObject
 
 - (void)setView:(id<IACCListingView>)view;
+- (void)setLocationService:(id<IACCLocationService>)locationService;
+- (void)setHttpService:(id<IACCHttpService>)httpService;
 
 @end

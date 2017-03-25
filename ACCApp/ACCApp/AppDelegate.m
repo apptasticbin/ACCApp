@@ -10,6 +10,8 @@
 #import "ACCMainViewController.h"
 #import "ACCListingViewController.h"
 #import "ACCListingPresenter.h"
+#import "ACCLocationService.h"
+#import "ACCHttpService.h"
 #import "UIStoryboard+Helper.h"
 
 @interface AppDelegate ()
@@ -37,8 +39,10 @@
                                      inStoryboard:@"Main"];
     
     [listingPresenter setView:(id)listingViewController];
-    [listingViewController setPresenter:(id)listingPresenter];
+    [listingPresenter setLocationService:(id)[ACCLocationService new]];
+    [listingPresenter setHttpService:(id)[ACCHttpService new]];
     
+    [listingViewController setPresenter:(id)listingPresenter];
     return listingViewController;
 }
 
