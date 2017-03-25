@@ -7,6 +7,7 @@
 //
 
 #import "ACCListingTableViewCell.h"
+#import "ACCListingRatingView.h"
 #import "ACCVenueDataModel.h"
 #import <UIImageView+AFNetworking.h>
 
@@ -48,7 +49,7 @@
 }
 
 - (void)p_updateRating:(NSNumber *)rating withColorString:(NSString *)colorString {
-    
+    [self.ratingView updateRating:rating withColorString:colorString];
 }
 
 @end

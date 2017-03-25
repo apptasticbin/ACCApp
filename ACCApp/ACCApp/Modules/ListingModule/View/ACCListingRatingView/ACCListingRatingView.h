@@ -10,4 +10,9 @@
 
 @interface ACCListingRatingView : UIView
 
+@property (weak, nonatomic) IBOutlet UILabel *ratingLabel;
+@property (strong, nonatomic) IBOutlet UIView *view;
+
+- (void)updateRating:(NSNumber *)rating withColorString:(NSString *)colorString;
+
 @end

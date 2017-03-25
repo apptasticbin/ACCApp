@@ -7,15 +7,37 @@
 //
 
 #import "ACCListingRatingView.h"
+#import "UIColor+Helper.h"
 
 @implementation ACCListingRatingView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self p_setupView];
+    }
+    return self;
 }
-*/
+
+#pragma mark - Public
+
+- (void)updateRating:(NSNumber *)rating withColorString:(NSString *)colorString {
+    if (rating && colorString) {
+        self.ratingLabel.text = rating.stringValue;
+        self.view.backgroundColor = [UIColor colorFromHexString:colorString];
+    } else {
+        self.ratingLabel.text = nil;
+        self.view.backgroundColor = [UIColor clearColor];
+    }
+}
+
+#pragma mark - Private
+
+- (void)p_setupView {
+    [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:self options:nil];
+    [self addSubview:_view];
+    
+    self.backgroundColor = [UIColor clearColor];
+}
 
 @end

@@ -36,6 +36,8 @@
 		79FCC4241E87103200599F31 /* ACCListingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC4231E87103200599F31 /* ACCListingTableViewCell.m */; };
 		79FCC4281E8714A800599F31 /* ACCListingRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC4271E8714A800599F31 /* ACCListingRatingView.m */; };
 		79FCC42F1E871D8000599F31 /* ACCAppearanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC42E1E871D8000599F31 /* ACCAppearanceController.m */; };
+		79FCC4311E872A7A00599F31 /* ACCListingRatingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79FCC4301E872A7A00599F31 /* ACCListingRatingView.xib */; };
+		79FCC4341E8730A700599F31 /* UIColor+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC4331E8730A700599F31 /* UIColor+Helper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,9 @@
 		79FCC4271E8714A800599F31 /* ACCListingRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCListingRatingView.m; path = Modules/ListingModule/View/ACCListingRatingView/ACCListingRatingView.m; sourceTree = "<group>"; };
 		79FCC42D1E871D8000599F31 /* ACCAppearanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCAppearanceController.h; sourceTree = "<group>"; };
 		79FCC42E1E871D8000599F31 /* ACCAppearanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCAppearanceController.m; sourceTree = "<group>"; };
+		79FCC4301E872A7A00599F31 /* ACCListingRatingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ACCListingRatingView.xib; path = Modules/ListingModule/View/ACCListingRatingView/ACCListingRatingView.xib; sourceTree = "<group>"; };
+		79FCC4321E8730A700599F31 /* UIColor+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Helper.h"; path = "Core/Categories/UIColor+Helper.h"; sourceTree = "<group>"; };
+		79FCC4331E8730A700599F31 /* UIColor+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Helper.m"; path = "Core/Categories/UIColor+Helper.m"; sourceTree = "<group>"; };
 		CF287026FFDBB874EF713561 /* Pods-ACCApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACCApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACCApp/Pods-ACCApp.release.xcconfig"; sourceTree = "<group>"; };
 		E58E55B6FF0C41C15DBFEEC4 /* libPods-ACCApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ACCApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9EF29AB0199A1DA44A06160 /* Pods-ACCApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACCApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACCApp/Pods-ACCApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -388,6 +393,8 @@
 		79001FAB1E86A33D00436D56 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				79FCC4321E8730A700599F31 /* UIColor+Helper.h */,
+				79FCC4331E8730A700599F31 /* UIColor+Helper.m */,
 				79001FAC1E86A3D400436D56 /* UIStoryboard+Helper.h */,
 				79001FAD1E86A3D400436D56 /* UIStoryboard+Helper.m */,
 			);
@@ -497,6 +504,7 @@
 			children = (
 				79FCC4261E8714A800599F31 /* ACCListingRatingView.h */,
 				79FCC4271E8714A800599F31 /* ACCListingRatingView.m */,
+				79FCC4301E872A7A00599F31 /* ACCListingRatingView.xib */,
 			);
 			name = ACCListingRatingView;
 			sourceTree = "<group>";
@@ -609,6 +617,7 @@
 			files = (
 				79001F5E1E86722600436D56 /* LaunchScreen.storyboard in Resources */,
 				79001F5B1E86722600436D56 /* Assets.xcassets in Resources */,
+				79FCC4311E872A7A00599F31 /* ACCListingRatingView.xib in Resources */,
 				79001F591E86722600436D56 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -686,6 +695,7 @@
 				79001F531E86722600436D56 /* AppDelegate.m in Sources */,
 				79FCC4131E86F27F00599F31 /* ACCBaseDataModel.m in Sources */,
 				79FCC4171E86F65800599F31 /* ACCVenueExploreDataModel.m in Sources */,
+				79FCC4341E8730A700599F31 /* UIColor+Helper.m in Sources */,
 				79001FBB1E86BA6F00436D56 /* ACCHttpService.m in Sources */,
 				79001FA01E8687EF00436D56 /* ACCMainViewController.m in Sources */,
 				79001FAE1E86A3D400436D56 /* UIStoryboard+Helper.m in Sources */,
