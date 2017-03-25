@@ -10,6 +10,7 @@
 #import "ACCMainViewController.h"
 #import "ACCListingViewController.h"
 #import "ACCListingPresenter.h"
+#import "UIStoryboard+Helper.h"
 
 @interface AppDelegate ()
 
@@ -32,19 +33,13 @@
 - (ACCListingViewController *)createListingViewController {
     ACCListingPresenter *listingPresenter = [ACCListingPresenter new];
     ACCListingViewController *listingViewController =
-    [self instantiateViewControllerWithId:@"ACCListingViewController" inStoryboard:@"Main"];
+    [UIStoryboard instantiateViewControllerWithId:@"ACCListingViewController"
+                                     inStoryboard:@"Main"];
     
     [listingPresenter setView:(id)listingViewController];
     [listingViewController setPresenter:(id)listingPresenter];
     
     return listingViewController;
-}
-
-- (__kindof UIViewController *)instantiateViewControllerWithId:(NSString *)viewControllerId
-                                                  inStoryboard:(NSString *)storyboardName {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName
-                                                         bundle:[NSBundle mainBundle]];
-    return [storyboard instantiateViewControllerWithIdentifier:viewControllerId];
 }
 
 @end
