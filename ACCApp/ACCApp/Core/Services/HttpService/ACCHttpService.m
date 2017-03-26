@@ -7,17 +7,8 @@
 //
 
 #import "ACCHttpService.h"
+#import "ACCSiteConfiguration.h"
 #import <AFNetworking.h>
-
-static NSString * const kFourSquareBaseURL              = @"https://api.foursquare.com/v2";
-
-static NSString * const kFourSquareClientIdKey          = @"client_id";
-static NSString * const kFourSquareClientSecretKey      = @"client_secret";
-static NSString * const kFourSquareVersionKey           = @"v";
-
-static NSString * const kFourSquareClientId             = @"NIVGCOEXFHGN2YA3XFFW3ZS2XG1U3QB4BO2LWTR5EU2S1M5H";
-static NSString * const kFourSquareClientSecret         = @"0TG2XOEZI2WDZWUIKHRSZZQTSCWMTGE5EWGIEAKWQJDJSRXV";
-static NSString * const kFourSquareVersion              = @"20170323";
 
 @interface ACCHttpService ()
 
@@ -31,19 +22,20 @@ static NSString * const kFourSquareVersion              = @"20170323";
 {
     self = [super init];
     if (self) {
-        _sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:kFourSquareBaseURL]];
+        _sessionManager =
+        [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:ACCFourSquareBaseURL]];
     }
     return self;
 }
 
 - (NSURLSessionDataTask *)GET:(NSString *)URLString
                    parameters:(id)parameters
-                      success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
-                      failure:(void (^)(NSURLSessionDataTask * task, NSError *error))failure {
+                      success:(ACCHttpServiceSuccessBlock)success
+                      failure:(ACCHttpServiceFailureBlock)failure {
     NSDictionary *defaultParameters = @{
-                                        kFourSquareClientIdKey : kFourSquareClientId,
-                                        kFourSquareClientSecretKey : kFourSquareClientSecret,
-                                        kFourSquareVersionKey : kFourSquareVersion
+                                        ACCFourSquareClientIdKey : ACCFourSquareClientId,
+                                        ACCFourSquareClientSecretKey : ACCFourSquareClientSecret,
+                                        ACCFourSquareVersionKey : ACCFourSquareVersion
                                         };
     NSMutableDictionary *allParameters = [NSMutableDictionary dictionaryWithDictionary:defaultParameters];
     [allParameters addEntriesFromDictionary:parameters];
@@ -52,10 +44,10 @@ static NSString * const kFourSquareVersion              = @"20170323";
 }
 
 - (NSURLSessionDataTask *)GET:(NSString *)URLString
-                            parameters:(id)parameters
-                              progress:(void (^)(NSProgress *downloadProgress))downloadProgress
-                               success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
-                      failure:(void (^)(NSURLSessionDataTask * task, NSError *error))failure {
+                   parameters:(id)parameters
+                     progress:(ACCHttpServiceProgressBlock)downloadProgress
+                      success:(ACCHttpServiceSuccessBlock)success
+                      failure:(ACCHttpServiceFailureBlock)failure {
     return [self.sessionManager GET:URLString
                          parameters:parameters
                            progress:downloadProgress

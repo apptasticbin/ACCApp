@@ -7,21 +7,10 @@
 //
 
 #import "ACCSettingsPresenter.h"
+#import "ACCSettingsConfiguration.h"
 #import "IACCSettingsPresenter.h"
 #import "IACCSettingsView.h"
 #import "IACCUserCacheService.h"
-
-NSString * const kACCSettingsSearchRadiusKey    = @"kACCSettingsSearchRadiusKey";
-NSString * const kACCSettingsSearchCategoryKey  = @"kACCSettingsSearchCategoryKey";
-
-NSInteger const kACCSettingsSearchRadiusDefaultValue  = 500;
-NSString * const kACCSettingsSearchCategoryDefaultValue = @"topPicks";
-
-
-static NSString * const kACCSettingCategoryTopPicks     = @"topPicks";
-static NSString * const kACCSettingCategoryFood         = @"food";
-static NSString * const kACCSettingCategoryShops        = @"shops";
-static NSString * const kACCSettingCategoryOutdoors     = @"ourdoors";
 
 @interface ACCSettingsPresenter ()<IACCSettingsPresenter>
 
@@ -36,40 +25,40 @@ static NSString * const kACCSettingCategoryOutdoors     = @"ourdoors";
 
 // TODO: move this part into use cases
 - (void)loadSearchRadiusValue {
-    NSNumber *searchRadius = [self.userCacheService objectForKey:kACCSettingsSearchRadiusKey];
+    NSNumber *searchRadius = [self.userCacheService objectForKey:ACCSettingsSearchRadiusKey];
     [self.view searchRadiusDidUpdate:searchRadius];
 }
 
 - (void)loadSearchCategoryIndex {
-    NSString *searchCategory = [self.userCacheService objectForKey:kACCSettingsSearchCategoryKey];
+    NSString *searchCategory = [self.userCacheService objectForKey:ACCSettingsSearchCategoryKey];
     [self.view searchCategoryIndexDidUpdate:[self categoryIndexFromString:searchCategory]];
 }
 
 - (void)updateSearchRadiusValue:(NSNumber *)newValue {
-    [self.userCacheService setObject:newValue forKey:kACCSettingsSearchRadiusKey];
+    [self.userCacheService setObject:newValue forKey:ACCSettingsSearchRadiusKey];
     [self.view searchRadiusDidUpdate:newValue];
 }
 
 - (void)updateSearchCategoryIndex:(NSUInteger)newCategoryIndex {
     [self.userCacheService setObject:[self stringFromCategoryIndex:newCategoryIndex]
-                              forKey:kACCSettingsSearchCategoryKey];
+                              forKey:ACCSettingsSearchCategoryKey];
     [self.view searchCategoryIndexDidUpdate:newCategoryIndex];
 }
 
 #pragma mark - Private
 
 - (NSString *)stringFromCategoryIndex:(NSUInteger)index {
-    return @[kACCSettingCategoryTopPicks,
-             kACCSettingCategoryFood,
-             kACCSettingCategoryShops,
-             kACCSettingCategoryOutdoors][index];
+    return @[ACCSettingCategoryTopPicks,
+             ACCSettingCategoryFood,
+             ACCSettingCategoryShops,
+             ACCSettingCategoryOutdoors][index];
 }
 
 - (NSUInteger)categoryIndexFromString:(NSString *)categoryString {
-    return [@[kACCSettingCategoryTopPicks,
-              kACCSettingCategoryFood,
-              kACCSettingCategoryShops,
-              kACCSettingCategoryOutdoors] indexOfObject:categoryString];
+    return [@[ACCSettingCategoryTopPicks,
+              ACCSettingCategoryFood,
+              ACCSettingCategoryShops,
+              ACCSettingCategoryOutdoors] indexOfObject:categoryString];
 }
 
 @end

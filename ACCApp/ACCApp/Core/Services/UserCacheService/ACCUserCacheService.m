@@ -7,6 +7,7 @@
 //
 
 #import "ACCUserCacheService.h"
+#import "ACCSettingsConfiguration.h"
 
 @interface ACCUserCacheService ()
 
@@ -44,8 +45,8 @@
 
 - (id)defaultObjectForKey:(NSString *)key {
     return @{
-             kACCSettingsSearchRadiusKey    :   @(kACCSettingsSearchRadiusDefaultValue),
-             kACCSettingsSearchCategoryKey  :   kACCSettingsSearchCategoryDefaultValue
+             ACCSettingsSearchRadiusKey    :   @(ACCSettingsSearchRadiusDefaultValue),
+             ACCSettingsSearchCategoryKey  :   ACCSettingsSearchCategoryDefaultValue
              }[key];
 }
 

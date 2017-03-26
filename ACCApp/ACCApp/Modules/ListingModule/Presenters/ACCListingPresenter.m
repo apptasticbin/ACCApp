@@ -7,21 +7,15 @@
 //
 
 #import "ACCListingPresenter.h"
+#import "ACCSettingsConfiguration.h"
+#import "ACCSiteConfiguration.h"
+#import "ACCVenueExploreDataModel.h"
+#import "ACCVenueGroupDataModel.h"
 #import "IACCListingView.h"
 #import "IACCListingPresenter.h"
 #import "IACCLocationService.h"
 #import "IACCHttpService.h"
 #import "IACCUserCacheService.h"
-#import "ACCVenueExploreDataModel.h"
-#import "ACCVenueGroupDataModel.h"
-
-static NSString * const kFourSquareVenuesExplorePath    = @"venues/explore";
-static NSString * const kFourSquareLocationKey          = @"ll";
-static NSString * const kFourSquareRadiusKey            = @"radius";
-static NSString * const kFourSquareSectionKey           = @"section";
-static NSString * const kFourSquareVenuePhotesKey       = @"venuePhotos";
-
-static NSString * const kFourSquareVenuePhotos          = @"1";
 
 @interface ACCListingPresenter ()<IACCListingPresenter>
 
@@ -44,16 +38,18 @@ static NSString * const kFourSquareVenuePhotos          = @"1";
         if (error) {
             NSLog(@"[ERROR] Failed to get current location");
             [self.view nearbyVenuesLoaded:nil];
-        } else {
-            [weakSelf p_fetchVenuesAtLocation:location
-                                     complete:^(ACCVenueExploreDataModel *data, NSError *error) {
-                                         if (data.groups && data.groups.count) {
-                                             [weakSelf.view nearbyVenuesLoaded:data.groups[0].venues];
-                                         } else {
-                                             [weakSelf.view nearbyVenuesLoaded:nil];
-                                         }
-                                     }];
+            return;
         }
+        
+        id completeBlock = ^(ACCVenueExploreDataModel *data, NSError *error) {
+            if (data.groups && data.groups.count) {
+                [weakSelf.view nearbyVenuesLoaded:data.groups[0].venues];
+            } else {
+                [weakSelf.view nearbyVenuesLoaded:nil];
+            }
+        };
+        
+        [weakSelf p_fetchVenuesAtLocation:location complete:completeBlock];
     }];
 }
 
@@ -67,29 +63,43 @@ static NSString * const kFourSquareVenuePhotos          = @"1";
         [weakSelf.currentTask cancel];
         [self p_clearCurrentTask];
     }
+    
+    NSString *section = [self.userCacheService objectForKey:ACCSettingsSearchCategoryKey];
+    NSNumber *radius = [self.userCacheService objectForKey:ACCSettingsSearchRadiusKey];
     NSDictionary *parameters = @{
-                                 kFourSquareLocationKey      :   location,
-                                 kFourSquareSectionKey       :   [self.userCacheService objectForKey:kACCSettingsSearchCategoryKey],
-                                 kFourSquareVenuePhotesKey   :   kFourSquareVenuePhotos,
-                                 kFourSquareRadiusKey        :   [self.userCacheService objectForKey:kACCSettingsSearchRadiusKey]
+                                 ACCFourSquareLocationKey      :   location,
+                                 ACCFourSquareSectionKey       :   section,
+                                 ACCFourSquareVenuePhotesKey   :   ACCFourSquareVenuePhotos,
+                                 ACCFourSquareRadiusKey        :   radius
                                  };
     // send new request
-    weakSelf.currentTask =
-    [weakSelf.httpService GET:kFourSquareVenuesExplorePath
-                   parameters:parameters
-                      success:^(NSURLSessionDataTask *task, id responseObject) {
-                          [ACCVenueExploreDataModel parseDataAsync:responseObject
-                                                          complete:^(ACCVenueExploreDataModel *data, NSError *error) {
-                                                              if (complete) {
-                                                                  complete(data, error);
-                                                              }
-                                                          }];
-                          [weakSelf p_clearCurrentTask];
-                      } failure:^(NSURLSessionDataTask *task, NSError *error) {
-                          NSLog(@"[ERROR] Failed to fetch venues.");
-                          [weakSelf p_clearCurrentTask];
-                      }];
+    weakSelf.currentTask = [self p_createFetchVenuesTaskWittParameters:parameters complete:complete];
     [weakSelf.currentTask resume];
+}
+
+- (NSURLSessionDataTask *)p_createFetchVenuesTaskWittParameters:(NSDictionary *)parameters
+                                                       complete:(ACCBaseDataModelParseCompleteBlock)complete {
+    ACCListingPresenter * __weak weakSelf = self;
+    
+    id successBlock = ^(NSURLSessionDataTask *task, id responseObject) {
+        [ACCVenueExploreDataModel parseDataAsync:responseObject
+                                        complete:^(ACCVenueExploreDataModel *data, NSError *error) {
+                                            if (complete) {
+                                                complete(data, error);
+                                            }
+                                        }];
+        [weakSelf p_clearCurrentTask];
+    };
+    
+    id failureBlock = ^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"[ERROR] Failed to fetch venues.");
+        [weakSelf p_clearCurrentTask];
+    };
+    
+    return [weakSelf.httpService GET:ACCFourSquareVenuesExplorePath
+                          parameters:parameters
+                             success:successBlock
+                             failure:failureBlock];
 }
 
 - (void)p_clearCurrentTask {
