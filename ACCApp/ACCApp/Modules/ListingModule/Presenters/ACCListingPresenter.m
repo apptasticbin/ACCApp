@@ -11,15 +11,16 @@
 #import "IACCListingPresenter.h"
 #import "IACCLocationService.h"
 #import "IACCHttpService.h"
+#import "IACCUserCacheService.h"
 #import "ACCVenueExploreDataModel.h"
 #import "ACCVenueGroupDataModel.h"
 
 static NSString * const kFourSquareVenuesExplorePath    = @"venues/explore";
 static NSString * const kFourSquareLocationKey          = @"ll";
+static NSString * const kFourSquareRadiusKey            = @"radius";
 static NSString * const kFourSquareSectionKey           = @"section";
 static NSString * const kFourSquareVenuePhotesKey       = @"venuePhotos";
 
-static NSString * const kFourSquareSection              = @"food";
 static NSString * const kFourSquareVenuePhotos          = @"1";
 
 @interface ACCListingPresenter ()<IACCListingPresenter>
@@ -27,32 +28,13 @@ static NSString * const kFourSquareVenuePhotos          = @"1";
 @property (nonatomic, weak) id<IACCListingView> view;
 @property (nonatomic, strong) id<IACCLocationService> locationService;
 @property (nonatomic, strong) id<IACCHttpService> httpService;
+@property (nonatomic, strong) id<IACCUserCacheService> userCacheService;
 
 @property (nonatomic, strong) NSURLSessionDataTask *currentTask;
 
 @end
 
 @implementation ACCListingPresenter
-
-#pragma mark - Public
-
-- (void)setView:(id<IACCListingView>)view {
-    if (_view != view) {
-        _view = view;
-    }
-}
-
-- (void)setLocationService:(id<IACCLocationService>)locationService {
-    if (_locationService != locationService) {
-        _locationService = locationService;
-    }
-}
-
-- (void)setHttpService:(id<IACCHttpService>)httpService {
-    if (_httpService != httpService) {
-        _httpService = httpService;
-    }
-}
 
 #pragma mark - IACCListingPresenter
 
@@ -77,6 +59,7 @@ static NSString * const kFourSquareVenuePhotos          = @"1";
 
 #pragma mark - Private
 
+// TODO: move this part into use cases
 - (void)p_fetchVenuesAtLocation:(NSString *)location complete:(ACCBaseDataModelParseCompleteBlock)complete {
     ACCListingPresenter * __weak weakSelf = self;
     // cancel previous ongoing request
@@ -84,14 +67,16 @@ static NSString * const kFourSquareVenuePhotos          = @"1";
         [weakSelf.currentTask cancel];
         [self p_clearCurrentTask];
     }
+    NSDictionary *parameters = @{
+                                 kFourSquareLocationKey      :   location,
+                                 kFourSquareSectionKey       :   [self.userCacheService objectForKey:kACCSettingsSearchCategoryKey],
+                                 kFourSquareVenuePhotesKey   :   kFourSquareVenuePhotos,
+                                 kFourSquareRadiusKey        :   [self.userCacheService objectForKey:kACCSettingsSearchRadiusKey]
+                                 };
     // send new request
     weakSelf.currentTask =
     [weakSelf.httpService GET:kFourSquareVenuesExplorePath
-                   parameters:@{
-                                kFourSquareLocationKey      :   location,
-                                kFourSquareSectionKey       :   kFourSquareSection,
-                                kFourSquareVenuePhotesKey   :   kFourSquareVenuePhotos
-                                }
+                   parameters:parameters
                       success:^(NSURLSessionDataTask *task, id responseObject) {
                           [ACCVenueExploreDataModel parseDataAsync:responseObject
                                                           complete:^(ACCVenueExploreDataModel *data, NSError *error) {

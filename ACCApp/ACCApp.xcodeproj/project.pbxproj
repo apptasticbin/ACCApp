@@ -38,6 +38,9 @@
 		79FCC42F1E871D8000599F31 /* ACCAppearanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC42E1E871D8000599F31 /* ACCAppearanceController.m */; };
 		79FCC4311E872A7A00599F31 /* ACCListingRatingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79FCC4301E872A7A00599F31 /* ACCListingRatingView.xib */; };
 		79FCC4341E8730A700599F31 /* UIColor+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC4331E8730A700599F31 /* UIColor+Helper.m */; };
+		79FCC4381E8735A500599F31 /* ACCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC4371E8735A500599F31 /* ACCSettingsViewController.m */; };
+		79FCC43E1E873F7B00599F31 /* ACCSettingsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC43D1E873F7B00599F31 /* ACCSettingsPresenter.m */; };
+		79FCC4421E87449100599F31 /* ACCUserCacheService.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC4411E87449100599F31 /* ACCUserCacheService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +103,15 @@
 		79FCC4301E872A7A00599F31 /* ACCListingRatingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ACCListingRatingView.xib; path = Modules/ListingModule/View/ACCListingRatingView/ACCListingRatingView.xib; sourceTree = "<group>"; };
 		79FCC4321E8730A700599F31 /* UIColor+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Helper.h"; path = "Core/Categories/UIColor+Helper.h"; sourceTree = "<group>"; };
 		79FCC4331E8730A700599F31 /* UIColor+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Helper.m"; path = "Core/Categories/UIColor+Helper.m"; sourceTree = "<group>"; };
+		79FCC4361E8735A500599F31 /* ACCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCSettingsViewController.h; path = Modules/SettingsModule/ViewControllers/ACCSettingsViewController/ACCSettingsViewController.h; sourceTree = "<group>"; };
+		79FCC4371E8735A500599F31 /* ACCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCSettingsViewController.m; path = Modules/SettingsModule/ViewControllers/ACCSettingsViewController/ACCSettingsViewController.m; sourceTree = "<group>"; };
+		79FCC4391E873D8500599F31 /* IACCSettingsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IACCSettingsView.h; path = Modules/SettingsModule/Interfaces/IACCSettingsView.h; sourceTree = "<group>"; };
+		79FCC43A1E873D9B00599F31 /* IACCSettingsPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IACCSettingsPresenter.h; path = Modules/SettingsModule/Interfaces/IACCSettingsPresenter.h; sourceTree = "<group>"; };
+		79FCC43C1E873F7B00599F31 /* ACCSettingsPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCSettingsPresenter.h; path = Modules/SettingsModule/Presenters/ACCSettingsPresenter/ACCSettingsPresenter.h; sourceTree = "<group>"; };
+		79FCC43D1E873F7B00599F31 /* ACCSettingsPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCSettingsPresenter.m; path = Modules/SettingsModule/Presenters/ACCSettingsPresenter/ACCSettingsPresenter.m; sourceTree = "<group>"; };
+		79FCC43F1E87445B00599F31 /* IACCUserCacheService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IACCUserCacheService.h; path = Core/Services/Interfaces/IACCUserCacheService.h; sourceTree = "<group>"; };
+		79FCC4401E87449100599F31 /* ACCUserCacheService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCUserCacheService.h; path = Core/Services/UserCacheService/ACCUserCacheService.h; sourceTree = "<group>"; };
+		79FCC4411E87449100599F31 /* ACCUserCacheService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCUserCacheService.m; path = Core/Services/UserCacheService/ACCUserCacheService.m; sourceTree = "<group>"; };
 		CF287026FFDBB874EF713561 /* Pods-ACCApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACCApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACCApp/Pods-ACCApp.release.xcconfig"; sourceTree = "<group>"; };
 		E58E55B6FF0C41C15DBFEEC4 /* libPods-ACCApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ACCApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9EF29AB0199A1DA44A06160 /* Pods-ACCApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACCApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACCApp/Pods-ACCApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -188,9 +200,9 @@
 			isa = PBXGroup;
 			children = (
 				79001FB01E86A73600436D56 /* Interfaces */,
-				79001F841E8675AD00436D56 /* CacheService */,
 				79001F771E8673E600436D56 /* HttpService */,
 				79001F781E8673F400436D56 /* LocationService */,
+				79001F841E8675AD00436D56 /* UserCacheService */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -303,6 +315,7 @@
 		79001F821E86759100436D56 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				79FCC4351E87356300599F31 /* ACCSettingsViewController */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -310,20 +323,25 @@
 		79001F831E86759700436D56 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				79FCC4391E873D8500599F31 /* IACCSettingsView.h */,
+				79FCC43A1E873D9B00599F31 /* IACCSettingsPresenter.h */,
 			);
 			name = Interfaces;
 			sourceTree = "<group>";
 		};
-		79001F841E8675AD00436D56 /* CacheService */ = {
+		79001F841E8675AD00436D56 /* UserCacheService */ = {
 			isa = PBXGroup;
 			children = (
+				79FCC4401E87449100599F31 /* ACCUserCacheService.h */,
+				79FCC4411E87449100599F31 /* ACCUserCacheService.m */,
 			);
-			name = CacheService;
+			name = UserCacheService;
 			sourceTree = "<group>";
 		};
 		79001F851E86761500436D56 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				79FCC43B1E873F4300599F31 /* ACCSettingsPresenter */,
 			);
 			name = Presenters;
 			sourceTree = "<group>";
@@ -404,8 +422,9 @@
 		79001FB01E86A73600436D56 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				79001FB81E86AA2A00436D56 /* IACCLocationService.h */,
 				79001FBD1E86BA9200436D56 /* IACCHttpService.h */,
+				79001FB81E86AA2A00436D56 /* IACCLocationService.h */,
+				79FCC43F1E87445B00599F31 /* IACCUserCacheService.h */,
 			);
 			name = Interfaces;
 			sourceTree = "<group>";
@@ -517,6 +536,24 @@
 			);
 			name = AppearanceController;
 			path = Core/Controller/AppearanceController;
+			sourceTree = "<group>";
+		};
+		79FCC4351E87356300599F31 /* ACCSettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				79FCC4361E8735A500599F31 /* ACCSettingsViewController.h */,
+				79FCC4371E8735A500599F31 /* ACCSettingsViewController.m */,
+			);
+			name = ACCSettingsViewController;
+			sourceTree = "<group>";
+		};
+		79FCC43B1E873F4300599F31 /* ACCSettingsPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				79FCC43C1E873F7B00599F31 /* ACCSettingsPresenter.h */,
+				79FCC43D1E873F7B00599F31 /* ACCSettingsPresenter.m */,
+			);
+			name = ACCSettingsPresenter;
 			sourceTree = "<group>";
 		};
 		9E8BBCFE0769C93C56FB88CA /* Pods */ = {
@@ -685,9 +722,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				79FCC41F1E86FC3E00599F31 /* ACCPhotoGroupDataModel.m in Sources */,
+				79FCC43E1E873F7B00599F31 /* ACCSettingsPresenter.m in Sources */,
 				79001F901E86791700436D56 /* ACCListingViewController.m in Sources */,
 				79FCC4281E8714A800599F31 /* ACCListingRatingView.m in Sources */,
 				79001F971E867D1000436D56 /* ACCListingPresenter.m in Sources */,
+				79FCC4421E87449100599F31 /* ACCUserCacheService.m in Sources */,
 				79FCC4241E87103200599F31 /* ACCListingTableViewCell.m in Sources */,
 				79FCC40D1E86EDD300599F31 /* ACCPhotoDataModel.m in Sources */,
 				79FCC41B1E86FAF200599F31 /* ACCVenueGroupDataModel.m in Sources */,
@@ -700,6 +739,7 @@
 				79001FA01E8687EF00436D56 /* ACCMainViewController.m in Sources */,
 				79001FAE1E86A3D400436D56 /* UIStoryboard+Helper.m in Sources */,
 				79FCC4091E86D9F800599F31 /* ACCVenueDataModel.m in Sources */,
+				79FCC4381E8735A500599F31 /* ACCSettingsViewController.m in Sources */,
 				79001FB31E86A83C00436D56 /* ACCLocationService.m in Sources */,
 				79001F501E86722600436D56 /* main.m in Sources */,
 			);
@@ -844,6 +884,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8BMD2QL62M;
 				INFOPLIST_FILE = ACCApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = biyu.ACCApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -857,6 +898,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8BMD2QL62M;
 				INFOPLIST_FILE = ACCApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = biyu.ACCApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

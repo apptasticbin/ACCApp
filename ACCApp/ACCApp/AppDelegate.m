@@ -12,6 +12,7 @@
 #import "ACCListingPresenter.h"
 #import "ACCLocationService.h"
 #import "ACCHttpService.h"
+#import "ACCUserCacheService.h"
 #import "ACCAppearanceController.h"
 #import "UIStoryboard+Helper.h"
 
@@ -37,6 +38,7 @@
     [ACCAppearanceController setupApplicationAppearance];
 }
 
+// TODO: move these codes into router
 - (ACCMainViewController *)p_createMainViewController {
     ACCListingViewController *listingViewController = [self p_createListingViewController];
     return [[ACCMainViewController alloc] initWithRootViewController:listingViewController];
@@ -50,7 +52,8 @@
     
     [listingPresenter setView:(id)listingViewController];
     [listingPresenter setLocationService:(id)[ACCLocationService new]];
-    [listingPresenter setHttpService:(id)[ACCHttpService new]];
+    [listingPresenter setHttpService:[ACCHttpService new]];
+    [listingPresenter setUserCacheService:[ACCUserCacheService new]];
     
     [listingViewController setPresenter:(id)listingPresenter];
     return listingViewController;

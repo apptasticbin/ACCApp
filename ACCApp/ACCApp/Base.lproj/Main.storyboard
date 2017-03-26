@@ -86,5 +86,90 @@
             </objects>
             <point key="canvasLocation" x="-642.39999999999998" y="26.53673163418291"/>
         </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="LwD-9T-z9K">
+            <objects>
+                <tableViewController storyboardIdentifier="ACCSettingsViewController" id="RvE-yG-XFK" customClass="ACCSettingsViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Fpc-lB-ePw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Search Radius" id="X1B-zp-LyD">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="f9t-iS-gqe">
+                                        <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f9t-iS-gqe" id="nf3-cy-sb9">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="250" minimumValue="250" maximumValue="1000" stepValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="xaf-J8-g3U">
+                                                    <rect key="frame" x="266" y="7" width="94" height="29"/>
+                                                </stepper>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="250 meters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDF-an-XFB">
+                                                    <rect key="frame" x="16" y="11" width="88" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="xaf-J8-g3U" firstAttribute="top" secondItem="nf3-cy-sb9" secondAttribute="topMargin" constant="-1" id="0zw-Jj-Cb7"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="xaf-J8-g3U" secondAttribute="bottom" constant="-1" id="4xE-j8-mdV"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="yDF-an-XFB" secondAttribute="bottom" constant="3" id="Nzk-4c-v1O"/>
+                                                <constraint firstItem="yDF-an-XFB" firstAttribute="leading" secondItem="nf3-cy-sb9" secondAttribute="leadingMargin" constant="8" id="VXc-Pm-rGz"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="xaf-J8-g3U" secondAttribute="trailing" constant="7" id="eFC-dF-dSJ"/>
+                                                <constraint firstItem="yDF-an-XFB" firstAttribute="top" secondItem="nf3-cy-sb9" secondAttribute="topMargin" constant="3" id="xoQ-tn-o8l"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Search Category" id="eQf-ki-Cyh">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Ja9-sN-7dI">
+                                        <rect key="frame" x="0.0" y="157" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ja9-sN-7dI" id="D8j-W5-8Re">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="K9u-Qc-7zv">
+                                                    <rect key="frame" x="29" y="8" width="317" height="29"/>
+                                                    <segments>
+                                                        <segment title="Top Picks"/>
+                                                        <segment title="Food"/>
+                                                        <segment title="Shops"/>
+                                                        <segment title="Outdoors"/>
+                                                    </segments>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="K9u-Qc-7zv" secondAttribute="bottom" constant="-1" id="8KS-DA-uM5"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="K9u-Qc-7zv" secondAttribute="trailing" constant="21" id="Jh9-Ij-mSz"/>
+                                                <constraint firstItem="K9u-Qc-7zv" firstAttribute="leading" secondItem="D8j-W5-8Re" secondAttribute="leadingMargin" constant="21" id="PBS-ec-mnl"/>
+                                                <constraint firstAttribute="topMargin" secondItem="K9u-Qc-7zv" secondAttribute="top" id="jBl-ym-f37"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="RvE-yG-XFK" id="dNn-gQ-6qU"/>
+                            <outlet property="delegate" destination="RvE-yG-XFK" id="YFv-gS-ISO"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="searchCategorySegmentedControl" destination="K9u-Qc-7zv" id="w8A-Kc-fkw"/>
+                        <outlet property="searchRadiusLabel" destination="yDF-an-XFB" id="eT7-mU-y6S"/>
+                        <outlet property="searchRadiusStepper" destination="xaf-J8-g3U" id="LZq-RU-QB2"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wuD-mz-5ZO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="237.59999999999999" y="26.53673163418291"/>
+        </scene>
     </scenes>
 </document>

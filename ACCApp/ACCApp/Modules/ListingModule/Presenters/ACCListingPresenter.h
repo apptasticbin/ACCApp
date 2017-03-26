@@ -11,11 +11,13 @@
 @protocol IACCListingView;
 @protocol IACCLocationService;
 @protocol IACCHttpService;
+@protocol IACCUserCacheService;
 
 @interface ACCListingPresenter : NSObject
 
 - (void)setView:(id<IACCListingView>)view;
 - (void)setLocationService:(id<IACCLocationService>)locationService;
 - (void)setHttpService:(id<IACCHttpService>)httpService;
+- (void)setUserCacheService:(id<IACCUserCacheService>)userCacheService;
 
 @end

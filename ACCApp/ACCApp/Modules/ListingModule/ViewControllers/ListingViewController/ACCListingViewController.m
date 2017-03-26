@@ -8,10 +8,13 @@
 
 #import "ACCListingViewController.h"
 #import "ACCListingTableViewCell.h"
+#import "ACCSettingsPresenter.h"
+#import "ACCSettingsViewController.h"
+#import "ACCUserCacheService.h"
 #import "ACCVenueDataModel.h"
 #import "IACCListingPresenter.h"
 #import "IACCListingView.h"
-
+#import "UIStoryboard+Helper.h"
 
 static NSString *ACCListingViewControllerCellId = @"ACCListingViewControllerCellId";
 
@@ -25,6 +28,7 @@ static NSString *ACCListingViewControllerCellId = @"ACCListingViewControllerCell
 @implementation ACCListingViewController
 
 - (void)viewDidLoad {
+    [super viewDidLoad];
     [self p_setupTableView];
     [self p_loadNearbyVenues];
 }
@@ -56,11 +60,16 @@ static NSString *ACCListingViewControllerCellId = @"ACCListingViewControllerCell
 #pragma mark - Private
 
 - (void)p_setupTableView {
-    self.refreshControl = [UIRefreshControl new];
+    [self setTitle:@"ACCApp"];
+    [self setRefreshControl:[UIRefreshControl new]];
     [self.refreshControl addTarget:self
                             action:@selector(p_pullToRefresh)
                   forControlEvents:UIControlEventValueChanged];
-    self.title = @"ACCApp";
+    UIBarButtonItem *settingsButton =
+    [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch
+                                                  target:self
+                                                  action:@selector(p_presentSettingsViewController)];
+    self.navigationItem.rightBarButtonItem = settingsButton;
 }
 
 - (void)p_loadNearbyVenues {
@@ -80,6 +89,20 @@ static NSString *ACCListingViewControllerCellId = @"ACCListingViewControllerCell
 
 - (void)p_stopRefreshing {
     [self.refreshControl endRefreshing];
+}
+
+// TODO: move these codes into router
+- (void)p_presentSettingsViewController {
+    ACCSettingsViewController *settingsViewController =
+    [UIStoryboard instantiateViewControllerWithId:@"ACCSettingsViewController"
+                                     inStoryboard:@"Main"];
+    ACCSettingsPresenter *settingsPresenter = [ACCSettingsPresenter new];
+    
+    [settingsViewController setPresenter:(id)settingsPresenter];
+    [settingsPresenter setView:(id)settingsViewController];
+    [settingsPresenter setUserCacheService:[ACCUserCacheService new]];
+    
+    [self.navigationController pushViewController:settingsViewController animated:YES];
 }
 
 @end
