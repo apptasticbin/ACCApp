@@ -12,6 +12,7 @@
 @protocol IACCLocationService;
 @protocol IACCHttpService;
 @protocol IACCUserCacheService;
+@protocol IACCListingRouter;
 
 @interface ACCListingPresenter : NSObject
 
@@ -19,5 +20,6 @@
 - (void)setLocationService:(id<IACCLocationService>)locationService;
 - (void)setHttpService:(id<IACCHttpService>)httpService;
 - (void)setUserCacheService:(id<IACCUserCacheService>)userCacheService;
+- (void)setRouter:(id<IACCListingRouter>)router;
 
 @end

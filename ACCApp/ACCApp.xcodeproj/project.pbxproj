@@ -41,6 +41,9 @@
 		79F807C41E87FF7800280F40 /* ACCVenueGroupDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F807BF1E87FF7800280F40 /* ACCVenueGroupDataModel.m */; };
 		79F807C81E87FF9400280F40 /* ACCBaseDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F807C71E87FF9400280F40 /* ACCBaseDataModel.m */; };
 		79F807CF1E88089E00280F40 /* CLLocation+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F807CE1E88089E00280F40 /* CLLocation+Helper.m */; };
+		79F807D91E880A3F00280F40 /* ACCMainRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F807D81E880A3F00280F40 /* ACCMainRouter.m */; };
+		79F807DC1E880FAC00280F40 /* ACCListingRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F807DB1E880FAC00280F40 /* ACCListingRouter.m */; };
+		79F807E01E88121800280F40 /* ACCNotificationConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F807DF1E88121800280F40 /* ACCNotificationConfiguration.m */; };
 		79FCC42F1E871D8000599F31 /* ACCAppearanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC42E1E871D8000599F31 /* ACCAppearanceController.m */; };
 		79FCC4341E8730A700599F31 /* UIColor+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC4331E8730A700599F31 /* UIColor+Helper.m */; };
 		79FCC4421E87449100599F31 /* ACCUserCacheService.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC4411E87449100599F31 /* ACCUserCacheService.m */; };
@@ -112,6 +115,14 @@
 		79F807C71E87FF9400280F40 /* ACCBaseDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCBaseDataModel.m; sourceTree = "<group>"; };
 		79F807CD1E88089E00280F40 /* CLLocation+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CLLocation+Helper.h"; path = "Core/Categories/CLLocation+Helper.h"; sourceTree = "<group>"; };
 		79F807CE1E88089E00280F40 /* CLLocation+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CLLocation+Helper.m"; path = "Core/Categories/CLLocation+Helper.m"; sourceTree = "<group>"; };
+		79F807D51E88099700280F40 /* IACCMainRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IACCMainRouter.h; path = Routers/Interfaces/IACCMainRouter.h; sourceTree = "<group>"; };
+		79F807D61E8809B800280F40 /* IACCListingRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IACCListingRouter.h; path = Routers/Interfaces/IACCListingRouter.h; sourceTree = "<group>"; };
+		79F807D71E880A3F00280F40 /* ACCMainRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCMainRouter.h; path = Routers/MainRouter/ACCMainRouter.h; sourceTree = "<group>"; };
+		79F807D81E880A3F00280F40 /* ACCMainRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCMainRouter.m; path = Routers/MainRouter/ACCMainRouter.m; sourceTree = "<group>"; };
+		79F807DA1E880FAC00280F40 /* ACCListingRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCListingRouter.h; path = Routers/ListingRouter/ACCListingRouter.h; sourceTree = "<group>"; };
+		79F807DB1E880FAC00280F40 /* ACCListingRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCListingRouter.m; path = Routers/ListingRouter/ACCListingRouter.m; sourceTree = "<group>"; };
+		79F807DE1E88121800280F40 /* ACCNotificationConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCNotificationConfiguration.h; path = Core/Configurations/NotificationConfiguration/ACCNotificationConfiguration.h; sourceTree = "<group>"; };
+		79F807DF1E88121800280F40 /* ACCNotificationConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCNotificationConfiguration.m; path = Core/Configurations/NotificationConfiguration/ACCNotificationConfiguration.m; sourceTree = "<group>"; };
 		79FCC42D1E871D8000599F31 /* ACCAppearanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCAppearanceController.h; sourceTree = "<group>"; };
 		79FCC42E1E871D8000599F31 /* ACCAppearanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCAppearanceController.m; sourceTree = "<group>"; };
 		79FCC4321E8730A700599F31 /* UIColor+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Helper.h"; path = "Core/Categories/UIColor+Helper.h"; sourceTree = "<group>"; };
@@ -172,6 +183,7 @@
 				79001F761E8673D900436D56 /* AppDelegate */,
 				79001F741E86739A00436D56 /* Modules */,
 				79001F861E86767600436D56 /* Core */,
+				79F807D01E88093200280F40 /* Routers */,
 				79001F7C1E86748300436D56 /* Resources */,
 				79001F4E1E86722600436D56 /* Supporting Files */,
 			);
@@ -453,6 +465,7 @@
 		79F807941E87F30000280F40 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
+				79F807DD1E8811F200280F40 /* NotificationConfiguration */,
 				79F807961E87F32000280F40 /* SettingsConfiguration */,
 				79F807951E87F30600280F40 /* SiteConfiguration */,
 			);
@@ -576,6 +589,52 @@
 			);
 			name = BaseDataModel;
 			path = Core/DataModels/BaseDataModel;
+			sourceTree = "<group>";
+		};
+		79F807D01E88093200280F40 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				79F807D31E88095300280F40 /* Interfaces */,
+				79F807D21E88094300280F40 /* ListingRouter */,
+				79F807D11E88093C00280F40 /* MainRouter */,
+			);
+			name = Routers;
+			sourceTree = "<group>";
+		};
+		79F807D11E88093C00280F40 /* MainRouter */ = {
+			isa = PBXGroup;
+			children = (
+				79F807D71E880A3F00280F40 /* ACCMainRouter.h */,
+				79F807D81E880A3F00280F40 /* ACCMainRouter.m */,
+			);
+			name = MainRouter;
+			sourceTree = "<group>";
+		};
+		79F807D21E88094300280F40 /* ListingRouter */ = {
+			isa = PBXGroup;
+			children = (
+				79F807DA1E880FAC00280F40 /* ACCListingRouter.h */,
+				79F807DB1E880FAC00280F40 /* ACCListingRouter.m */,
+			);
+			name = ListingRouter;
+			sourceTree = "<group>";
+		};
+		79F807D31E88095300280F40 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				79F807D61E8809B800280F40 /* IACCListingRouter.h */,
+				79F807D51E88099700280F40 /* IACCMainRouter.h */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		79F807DD1E8811F200280F40 /* NotificationConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				79F807DE1E88121800280F40 /* ACCNotificationConfiguration.h */,
+				79F807DF1E88121800280F40 /* ACCNotificationConfiguration.m */,
+			);
+			name = NotificationConfiguration;
 			sourceTree = "<group>";
 		};
 		79FCC40F1E86F24D00599F31 /* DataModels */ = {
@@ -773,6 +832,7 @@
 				79001F901E86791700436D56 /* ACCListingViewController.m in Sources */,
 				79001F971E867D1000436D56 /* ACCListingPresenter.m in Sources */,
 				79FCC4421E87449100599F31 /* ACCUserCacheService.m in Sources */,
+				79F807D91E880A3F00280F40 /* ACCMainRouter.m in Sources */,
 				79F807C31E87FF7800280F40 /* ACCVenueExploreDataModel.m in Sources */,
 				79F8079A1E87F49C00280F40 /* ACCSettingsConfiguration.m in Sources */,
 				79FCC42F1E871D8000599F31 /* ACCAppearanceController.m in Sources */,
@@ -780,9 +840,11 @@
 				79F807AC1E87FF1000280F40 /* ACCSettingsPresenter.m in Sources */,
 				79001F531E86722600436D56 /* AppDelegate.m in Sources */,
 				79F807CF1E88089E00280F40 /* CLLocation+Helper.m in Sources */,
+				79F807DC1E880FAC00280F40 /* ACCListingRouter.m in Sources */,
 				79F807C01E87FF7800280F40 /* ACCPhotoDataModel.m in Sources */,
 				79F807C81E87FF9400280F40 /* ACCBaseDataModel.m in Sources */,
 				79F807A71E87FEDA00280F40 /* ACCListingTableViewCell.m in Sources */,
+				79F807E01E88121800280F40 /* ACCNotificationConfiguration.m in Sources */,
 				79FCC4341E8730A700599F31 /* UIColor+Helper.m in Sources */,
 				79001FBB1E86BA6F00436D56 /* ACCHttpService.m in Sources */,
 				79F807C11E87FF7800280F40 /* ACCPhotoGroupDataModel.m in Sources */,

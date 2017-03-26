@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-FOUNDATION_EXPORT NSString * const ACCSettingsValueChangedNotification;
-
 @protocol IACCSettingsPresenter;
 
 @interface ACCSettingsViewController : UITableViewController

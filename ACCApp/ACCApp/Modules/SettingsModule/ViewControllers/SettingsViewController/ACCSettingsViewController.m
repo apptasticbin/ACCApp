@@ -7,14 +7,13 @@
 //
 
 #import "ACCSettingsViewController.h"
+#import "ACCNotificationConfiguration.h"
 #import "IACCSettingsPresenter.h"
 #import "IACCSettingsView.h"
 
 static NSUInteger const kACCSettingsSearchRadiusMinValue = 200;
 static NSUInteger const kACCSettingsSearchRadiusMaxValue = 1000;
 static NSUInteger const kACCSettingsSearchRadiusStep = 100;
-
-NSString * const ACCSettingsValueChangedNotification = @"kACCSettingsValueChangedNotification";
 
 @interface ACCSettingsViewController ()<IACCSettingsView>
 

@@ -6,8 +6,11 @@
 //  Copyright © 2017 Bin Yu. All rights reserved.
 //
 
+@class UIViewController;
+
 @protocol IACCListingPresenter <NSObject>
 
 - (void)loadNearbyVenues;
+- (void)presentSettingsFromViewController:(UIViewController *)viewController;
 
 @end

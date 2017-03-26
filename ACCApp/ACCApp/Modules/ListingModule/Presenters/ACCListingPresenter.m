@@ -13,6 +13,7 @@
 #import "ACCVenueGroupDataModel.h"
 #import "IACCListingView.h"
 #import "IACCListingPresenter.h"
+#import "IACCListingRouter.h"
 #import "IACCLocationService.h"
 #import "IACCHttpService.h"
 #import "IACCUserCacheService.h"
@@ -23,6 +24,7 @@
 @property (nonatomic, strong) id<IACCLocationService> locationService;
 @property (nonatomic, strong) id<IACCHttpService> httpService;
 @property (nonatomic, strong) id<IACCUserCacheService> userCacheService;
+@property (nonatomic, strong) id<IACCListingRouter> router;
 
 @property (nonatomic, strong) NSURLSessionDataTask *currentTask;
 
@@ -51,6 +53,10 @@
         
         [weakSelf p_fetchVenuesAtLocation:location complete:completeBlock];
     }];
+}
+
+- (void)presentSettingsFromViewController:(UIViewController *)viewController {
+    [self.router presentSettingsModelFromViewController:viewController];
 }
 
 #pragma mark - Private

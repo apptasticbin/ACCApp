@@ -8,13 +8,10 @@
 
 #import "ACCListingViewController.h"
 #import "ACCListingTableViewCell.h"
-#import "ACCSettingsPresenter.h"
-#import "ACCSettingsViewController.h"
-#import "ACCUserCacheService.h"
+#import "ACCNotificationConfiguration.h"
 #import "ACCVenueDataModel.h"
 #import "IACCListingPresenter.h"
 #import "IACCListingView.h"
-#import "UIStoryboard+Helper.h"
 
 static NSString *ACCListingViewControllerCellId = @"ACCListingViewControllerCellId";
 
@@ -105,18 +102,8 @@ static NSString *ACCListingViewControllerCellId = @"ACCListingViewControllerCell
     [self.refreshControl endRefreshing];
 }
 
-// TODO: move these codes into router
 - (void)p_presentSettingsViewController {
-    ACCSettingsViewController *settingsViewController =
-    [UIStoryboard instantiateViewControllerWithId:@"ACCSettingsViewController"
-                                     inStoryboard:@"Main"];
-    ACCSettingsPresenter *settingsPresenter = [ACCSettingsPresenter new];
-    
-    [settingsViewController setPresenter:(id)settingsPresenter];
-    [settingsPresenter setView:(id)settingsViewController];
-    [settingsPresenter setUserCacheService:[ACCUserCacheService new]];
-    
-    [self.navigationController pushViewController:settingsViewController animated:YES];
+    [self.presenter presentSettingsFromViewController:self];
 }
 
 @end
