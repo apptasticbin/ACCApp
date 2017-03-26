@@ -23,7 +23,7 @@
 
 - (void)updateRating:(NSNumber *)rating withColorString:(NSString *)colorString {
     if (rating && colorString) {
-        self.ratingLabel.text = rating.stringValue;
+        self.ratingLabel.text = [NSString stringWithFormat:@"%.1f",rating.doubleValue];
         self.view.backgroundColor = [UIColor colorFromHexString:colorString];
     } else {
         self.ratingLabel.text = nil;
