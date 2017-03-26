@@ -21,5 +21,5 @@ NSString * const ACCSettingsSearchCategoryDefaultValue = @"topPicks";
 NSString * const ACCSettingCategoryTopPicks            = @"topPicks";
 NSString * const ACCSettingCategoryFood                = @"food";
 NSString * const ACCSettingCategoryShops               = @"shops";
-NSString * const ACCSettingCategoryOutdoors            = @"ourdoors";
+NSString * const ACCSettingCategoryOutdoors            = @"outdoors";
 
