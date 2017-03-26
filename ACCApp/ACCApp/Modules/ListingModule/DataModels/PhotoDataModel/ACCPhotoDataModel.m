@@ -8,6 +8,10 @@
 
 #import "ACCPhotoDataModel.h"
 
+static NSInteger  const kACCPhotoDataModelThumbnailWidth    = 100;
+static NSInteger  const kACCPhotoDataModelThumbnailHeight   = 100;
+static NSString * const kACCPhotoDataModelWHSizeFormat      = @"%@%@x%@%@";
+
 @implementation ACCPhotoDataModel
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
@@ -21,8 +25,12 @@
 
 #pragma mark - Public
 
-- (NSString *)fullUrlString {
-    return [NSString stringWithFormat:@"%@%@x%@%@", self.prefix, self.width, self.height, self.suffix];
+- (NSString *)thumbnailUrlString {
+    return [NSString stringWithFormat:kACCPhotoDataModelWHSizeFormat,
+            self.prefix,
+            @(kACCPhotoDataModelThumbnailWidth),
+            @(kACCPhotoDataModelThumbnailHeight),
+            self.suffix];
 }
 
 @end

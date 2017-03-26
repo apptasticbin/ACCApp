@@ -32,7 +32,7 @@
     if (self.photoGroups && self.photoGroups.count) {
         ACCPhotoGroupDataModel *photoGroup = self.photoGroups.firstObject;
         if (photoGroup.photos && photoGroup.photos.count) {
-            return photoGroup.photos.firstObject.fullUrlString;
+            return [photoGroup.photos.firstObject thumbnailUrlString];
         }
     }
     return nil;

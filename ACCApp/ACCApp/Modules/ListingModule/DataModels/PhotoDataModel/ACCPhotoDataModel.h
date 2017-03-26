@@ -16,6 +16,6 @@
 @property (nonatomic, strong) NSNumber *width;
 @property (nonatomic, strong) NSNumber *height;
 
-- (NSString *)fullUrlString;
+- (NSString *)thumbnailUrlString;
 
 @end
