@@ -30,7 +30,14 @@ static NSString *ACCListingViewControllerCellId = @"ACCListingViewControllerCell
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self p_setupTableView];
+    [self p_setupNotification];
     [self p_loadNearbyVenues];
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:ACCSettingsValueChangedNotification
+                                                  object:nil];
 }
 
 #pragma mark - IACCListingView
@@ -70,6 +77,13 @@ static NSString *ACCListingViewControllerCellId = @"ACCListingViewControllerCell
                                                   target:self
                                                   action:@selector(p_presentSettingsViewController)];
     self.navigationItem.rightBarButtonItem = settingsButton;
+}
+
+- (void)p_setupNotification {
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(p_loadNearbyVenues)
+                                                 name:ACCSettingsValueChangedNotification
+                                               object:nil];
 }
 
 - (void)p_loadNearbyVenues {

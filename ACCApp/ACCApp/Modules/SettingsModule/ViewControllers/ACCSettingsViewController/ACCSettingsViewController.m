@@ -14,6 +14,8 @@ static NSUInteger const kACCSettingsSearchRadiusMinValue = 200;
 static NSUInteger const kACCSettingsSearchRadiusMaxValue = 1000;
 static NSUInteger const kACCSettingsSearchRadiusStep = 100;
 
+NSString * const ACCSettingsValueChangedNotification = @"kACCSettingsValueChangedNotification";
+
 @interface ACCSettingsViewController ()<IACCSettingsView>
 
 @property (nonatomic, strong) id<IACCSettingsPresenter> presenter;
@@ -28,6 +30,11 @@ static NSUInteger const kACCSettingsSearchRadiusStep = 100;
     [self p_setupSearchCategorySegementedControl];
     [self p_loadSearchRadiusSetting];
     [self p_loadSearchCategorySetting];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [[NSNotificationCenter defaultCenter] postNotificationName:ACCSettingsValueChangedNotification
+                                                        object:nil];
 }
 
 #pragma mark - IACCSettingsView
