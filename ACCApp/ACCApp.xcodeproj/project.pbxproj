@@ -29,19 +29,19 @@
 		79001FBC1E86BA6F00436D56 /* ACCHttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = 79001FBA1E86BA6F00436D56 /* ACCHttpService.m */; };
 		79F8079A1E87F49C00280F40 /* ACCSettingsConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F807991E87F49C00280F40 /* ACCSettingsConfiguration.m */; };
 		79F8079D1E87F55E00280F40 /* ACCSiteConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F8079C1E87F55E00280F40 /* ACCSiteConfiguration.m */; };
-		79FCC4091E86D9F800599F31 /* ACCVenueDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC4081E86D9F800599F31 /* ACCVenueDataModel.m */; };
-		79FCC40D1E86EDD300599F31 /* ACCPhotoDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC40C1E86EDD300599F31 /* ACCPhotoDataModel.m */; };
-		79FCC4131E86F27F00599F31 /* ACCBaseDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC4121E86F27F00599F31 /* ACCBaseDataModel.m */; };
-		79FCC4171E86F65800599F31 /* ACCVenueExploreDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC4161E86F65800599F31 /* ACCVenueExploreDataModel.m */; };
-		79FCC41B1E86FAF200599F31 /* ACCVenueGroupDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC41A1E86FAF200599F31 /* ACCVenueGroupDataModel.m */; };
-		79FCC41F1E86FC3E00599F31 /* ACCPhotoGroupDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC41E1E86FC3E00599F31 /* ACCPhotoGroupDataModel.m */; };
-		79FCC4241E87103200599F31 /* ACCListingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC4231E87103200599F31 /* ACCListingTableViewCell.m */; };
-		79FCC4281E8714A800599F31 /* ACCListingRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC4271E8714A800599F31 /* ACCListingRatingView.m */; };
+		79F807A51E87FEDA00280F40 /* ACCListingRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F807A01E87FEDA00280F40 /* ACCListingRatingView.m */; };
+		79F807A61E87FEDA00280F40 /* ACCListingRatingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79F807A11E87FEDA00280F40 /* ACCListingRatingView.xib */; };
+		79F807A71E87FEDA00280F40 /* ACCListingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F807A41E87FEDA00280F40 /* ACCListingTableViewCell.m */; };
+		79F807AC1E87FF1000280F40 /* ACCSettingsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F807AB1E87FF1000280F40 /* ACCSettingsPresenter.m */; };
+		79F807B01E87FF2800280F40 /* ACCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F807AF1E87FF2800280F40 /* ACCSettingsViewController.m */; };
+		79F807C01E87FF7800280F40 /* ACCPhotoDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F807B31E87FF7800280F40 /* ACCPhotoDataModel.m */; };
+		79F807C11E87FF7800280F40 /* ACCPhotoGroupDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F807B61E87FF7800280F40 /* ACCPhotoGroupDataModel.m */; };
+		79F807C21E87FF7800280F40 /* ACCVenueDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F807B91E87FF7800280F40 /* ACCVenueDataModel.m */; };
+		79F807C31E87FF7800280F40 /* ACCVenueExploreDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F807BC1E87FF7800280F40 /* ACCVenueExploreDataModel.m */; };
+		79F807C41E87FF7800280F40 /* ACCVenueGroupDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F807BF1E87FF7800280F40 /* ACCVenueGroupDataModel.m */; };
+		79F807C81E87FF9400280F40 /* ACCBaseDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F807C71E87FF9400280F40 /* ACCBaseDataModel.m */; };
 		79FCC42F1E871D8000599F31 /* ACCAppearanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC42E1E871D8000599F31 /* ACCAppearanceController.m */; };
-		79FCC4311E872A7A00599F31 /* ACCListingRatingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79FCC4301E872A7A00599F31 /* ACCListingRatingView.xib */; };
 		79FCC4341E8730A700599F31 /* UIColor+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC4331E8730A700599F31 /* UIColor+Helper.m */; };
-		79FCC4381E8735A500599F31 /* ACCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC4371E8735A500599F31 /* ACCSettingsViewController.m */; };
-		79FCC43E1E873F7B00599F31 /* ACCSettingsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC43D1E873F7B00599F31 /* ACCSettingsPresenter.m */; };
 		79FCC4421E87449100599F31 /* ACCUserCacheService.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC4411E87449100599F31 /* ACCUserCacheService.m */; };
 /* End PBXBuildFile section */
 
@@ -88,33 +88,33 @@
 		79F807991E87F49C00280F40 /* ACCSettingsConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCSettingsConfiguration.m; path = Core/Configurations/SettingsConfiguration/ACCSettingsConfiguration.m; sourceTree = "<group>"; };
 		79F8079B1E87F55E00280F40 /* ACCSiteConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCSiteConfiguration.h; path = Core/Configurations/SiteConfiguration/ACCSiteConfiguration.h; sourceTree = "<group>"; };
 		79F8079C1E87F55E00280F40 /* ACCSiteConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCSiteConfiguration.m; path = Core/Configurations/SiteConfiguration/ACCSiteConfiguration.m; sourceTree = "<group>"; };
-		79FCC4071E86D9F800599F31 /* ACCVenueDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCVenueDataModel.h; path = Modules/ListingModule/DataModels/ACCVenueDataModel/ACCVenueDataModel.h; sourceTree = "<group>"; };
-		79FCC4081E86D9F800599F31 /* ACCVenueDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCVenueDataModel.m; path = Modules/ListingModule/DataModels/ACCVenueDataModel/ACCVenueDataModel.m; sourceTree = "<group>"; };
-		79FCC40B1E86EDD300599F31 /* ACCPhotoDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCPhotoDataModel.h; path = Modules/ListingModule/DataModels/ACCPhotoDataModel/ACCPhotoDataModel.h; sourceTree = "<group>"; };
-		79FCC40C1E86EDD300599F31 /* ACCPhotoDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCPhotoDataModel.m; path = Modules/ListingModule/DataModels/ACCPhotoDataModel/ACCPhotoDataModel.m; sourceTree = "<group>"; };
-		79FCC4111E86F27F00599F31 /* ACCBaseDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCBaseDataModel.h; path = Core/DataModels/ACCBaseDataModel/ACCBaseDataModel.h; sourceTree = "<group>"; };
-		79FCC4121E86F27F00599F31 /* ACCBaseDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCBaseDataModel.m; path = Core/DataModels/ACCBaseDataModel/ACCBaseDataModel.m; sourceTree = "<group>"; };
-		79FCC4151E86F65800599F31 /* ACCVenueExploreDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCVenueExploreDataModel.h; path = Modules/ListingModule/DataModels/ACCVenueExploreDataModel/ACCVenueExploreDataModel.h; sourceTree = "<group>"; };
-		79FCC4161E86F65800599F31 /* ACCVenueExploreDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCVenueExploreDataModel.m; path = Modules/ListingModule/DataModels/ACCVenueExploreDataModel/ACCVenueExploreDataModel.m; sourceTree = "<group>"; };
-		79FCC4191E86FAF200599F31 /* ACCVenueGroupDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCVenueGroupDataModel.h; path = Modules/ListingModule/DataModels/ACCVenueGroupDataModel/ACCVenueGroupDataModel.h; sourceTree = "<group>"; };
-		79FCC41A1E86FAF200599F31 /* ACCVenueGroupDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCVenueGroupDataModel.m; path = Modules/ListingModule/DataModels/ACCVenueGroupDataModel/ACCVenueGroupDataModel.m; sourceTree = "<group>"; };
-		79FCC41D1E86FC3E00599F31 /* ACCPhotoGroupDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCPhotoGroupDataModel.h; path = Modules/ListingModule/DataModels/ACCPhotoGroupDataModel/ACCPhotoGroupDataModel.h; sourceTree = "<group>"; };
-		79FCC41E1E86FC3E00599F31 /* ACCPhotoGroupDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCPhotoGroupDataModel.m; path = Modules/ListingModule/DataModels/ACCPhotoGroupDataModel/ACCPhotoGroupDataModel.m; sourceTree = "<group>"; };
-		79FCC4221E87103200599F31 /* ACCListingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCListingTableViewCell.h; path = Modules/ListingModule/View/ACCListingTableViewCell/ACCListingTableViewCell.h; sourceTree = "<group>"; };
-		79FCC4231E87103200599F31 /* ACCListingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCListingTableViewCell.m; path = Modules/ListingModule/View/ACCListingTableViewCell/ACCListingTableViewCell.m; sourceTree = "<group>"; };
-		79FCC4261E8714A800599F31 /* ACCListingRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCListingRatingView.h; path = Modules/ListingModule/View/ACCListingRatingView/ACCListingRatingView.h; sourceTree = "<group>"; };
-		79FCC4271E8714A800599F31 /* ACCListingRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCListingRatingView.m; path = Modules/ListingModule/View/ACCListingRatingView/ACCListingRatingView.m; sourceTree = "<group>"; };
+		79F8079F1E87FEDA00280F40 /* ACCListingRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCListingRatingView.h; sourceTree = "<group>"; };
+		79F807A01E87FEDA00280F40 /* ACCListingRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCListingRatingView.m; sourceTree = "<group>"; };
+		79F807A11E87FEDA00280F40 /* ACCListingRatingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ACCListingRatingView.xib; sourceTree = "<group>"; };
+		79F807A31E87FEDA00280F40 /* ACCListingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCListingTableViewCell.h; sourceTree = "<group>"; };
+		79F807A41E87FEDA00280F40 /* ACCListingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCListingTableViewCell.m; sourceTree = "<group>"; };
+		79F807AA1E87FF1000280F40 /* ACCSettingsPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCSettingsPresenter.h; sourceTree = "<group>"; };
+		79F807AB1E87FF1000280F40 /* ACCSettingsPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCSettingsPresenter.m; sourceTree = "<group>"; };
+		79F807AE1E87FF2800280F40 /* ACCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCSettingsViewController.h; sourceTree = "<group>"; };
+		79F807AF1E87FF2800280F40 /* ACCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCSettingsViewController.m; sourceTree = "<group>"; };
+		79F807B21E87FF7800280F40 /* ACCPhotoDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCPhotoDataModel.h; sourceTree = "<group>"; };
+		79F807B31E87FF7800280F40 /* ACCPhotoDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCPhotoDataModel.m; sourceTree = "<group>"; };
+		79F807B51E87FF7800280F40 /* ACCPhotoGroupDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCPhotoGroupDataModel.h; sourceTree = "<group>"; };
+		79F807B61E87FF7800280F40 /* ACCPhotoGroupDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCPhotoGroupDataModel.m; sourceTree = "<group>"; };
+		79F807B81E87FF7800280F40 /* ACCVenueDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCVenueDataModel.h; sourceTree = "<group>"; };
+		79F807B91E87FF7800280F40 /* ACCVenueDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCVenueDataModel.m; sourceTree = "<group>"; };
+		79F807BB1E87FF7800280F40 /* ACCVenueExploreDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCVenueExploreDataModel.h; sourceTree = "<group>"; };
+		79F807BC1E87FF7800280F40 /* ACCVenueExploreDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCVenueExploreDataModel.m; sourceTree = "<group>"; };
+		79F807BE1E87FF7800280F40 /* ACCVenueGroupDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCVenueGroupDataModel.h; sourceTree = "<group>"; };
+		79F807BF1E87FF7800280F40 /* ACCVenueGroupDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCVenueGroupDataModel.m; sourceTree = "<group>"; };
+		79F807C61E87FF9400280F40 /* ACCBaseDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCBaseDataModel.h; sourceTree = "<group>"; };
+		79F807C71E87FF9400280F40 /* ACCBaseDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCBaseDataModel.m; sourceTree = "<group>"; };
 		79FCC42D1E871D8000599F31 /* ACCAppearanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCAppearanceController.h; sourceTree = "<group>"; };
 		79FCC42E1E871D8000599F31 /* ACCAppearanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCAppearanceController.m; sourceTree = "<group>"; };
-		79FCC4301E872A7A00599F31 /* ACCListingRatingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ACCListingRatingView.xib; path = Modules/ListingModule/View/ACCListingRatingView/ACCListingRatingView.xib; sourceTree = "<group>"; };
 		79FCC4321E8730A700599F31 /* UIColor+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Helper.h"; path = "Core/Categories/UIColor+Helper.h"; sourceTree = "<group>"; };
 		79FCC4331E8730A700599F31 /* UIColor+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Helper.m"; path = "Core/Categories/UIColor+Helper.m"; sourceTree = "<group>"; };
-		79FCC4361E8735A500599F31 /* ACCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCSettingsViewController.h; path = Modules/SettingsModule/ViewControllers/ACCSettingsViewController/ACCSettingsViewController.h; sourceTree = "<group>"; };
-		79FCC4371E8735A500599F31 /* ACCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCSettingsViewController.m; path = Modules/SettingsModule/ViewControllers/ACCSettingsViewController/ACCSettingsViewController.m; sourceTree = "<group>"; };
 		79FCC4391E873D8500599F31 /* IACCSettingsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IACCSettingsView.h; path = Modules/SettingsModule/Interfaces/IACCSettingsView.h; sourceTree = "<group>"; };
 		79FCC43A1E873D9B00599F31 /* IACCSettingsPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IACCSettingsPresenter.h; path = Modules/SettingsModule/Interfaces/IACCSettingsPresenter.h; sourceTree = "<group>"; };
-		79FCC43C1E873F7B00599F31 /* ACCSettingsPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCSettingsPresenter.h; path = Modules/SettingsModule/Presenters/ACCSettingsPresenter/ACCSettingsPresenter.h; sourceTree = "<group>"; };
-		79FCC43D1E873F7B00599F31 /* ACCSettingsPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCSettingsPresenter.m; path = Modules/SettingsModule/Presenters/ACCSettingsPresenter/ACCSettingsPresenter.m; sourceTree = "<group>"; };
 		79FCC43F1E87445B00599F31 /* IACCUserCacheService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IACCUserCacheService.h; path = Core/Services/Interfaces/IACCUserCacheService.h; sourceTree = "<group>"; };
 		79FCC4401E87449100599F31 /* ACCUserCacheService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACCUserCacheService.h; path = Core/Services/UserCacheService/ACCUserCacheService.h; sourceTree = "<group>"; };
 		79FCC4411E87449100599F31 /* ACCUserCacheService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACCUserCacheService.m; path = Core/Services/UserCacheService/ACCUserCacheService.m; sourceTree = "<group>"; };
@@ -292,11 +292,11 @@
 		79001F7E1E8674CD00436D56 /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
-				79FCC40A1E86EDA500599F31 /* ACCPhotoDataModel */,
-				79FCC41C1E86FC0700599F31 /* ACCPhotoGroupDataModel */,
-				79FCC4061E86D7BB00599F31 /* ACCVenueDataModel */,
-				79FCC4141E86F62600599F31 /* ACCVenueExploreDataModel */,
-				79FCC4181E86FABD00599F31 /* ACCVenueGroupDataModel */,
+				79F807B11E87FF7800280F40 /* PhotoDataModel */,
+				79F807B41E87FF7800280F40 /* PhotoGroupDataModel */,
+				79F807B71E87FF7800280F40 /* VenueDataModel */,
+				79F807BA1E87FF7800280F40 /* VenueExploreDataModel */,
+				79F807BD1E87FF7800280F40 /* VenueGroupDataModel */,
 			);
 			name = DataModels;
 			sourceTree = "<group>";
@@ -321,7 +321,7 @@
 		79001F821E86759100436D56 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				79FCC4351E87356300599F31 /* ACCSettingsViewController */,
+				79F807AD1E87FF2800280F40 /* SettingsViewController */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -347,7 +347,7 @@
 		79001F851E86761500436D56 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
-				79FCC43B1E873F4300599F31 /* ACCSettingsPresenter */,
+				79F807A91E87FF1000280F40 /* SettingsPresenter */,
 			);
 			name = Presenters;
 			sourceTree = "<group>";
@@ -472,94 +472,122 @@
 			name = SettingsConfiguration;
 			sourceTree = "<group>";
 		};
-		79FCC4061E86D7BB00599F31 /* ACCVenueDataModel */ = {
+		79F8079E1E87FEDA00280F40 /* ListingRatingView */ = {
 			isa = PBXGroup;
 			children = (
-				79FCC4071E86D9F800599F31 /* ACCVenueDataModel.h */,
-				79FCC4081E86D9F800599F31 /* ACCVenueDataModel.m */,
+				79F8079F1E87FEDA00280F40 /* ACCListingRatingView.h */,
+				79F807A01E87FEDA00280F40 /* ACCListingRatingView.m */,
+				79F807A11E87FEDA00280F40 /* ACCListingRatingView.xib */,
 			);
-			name = ACCVenueDataModel;
+			name = ListingRatingView;
+			path = Modules/ListingModule/View/ListingRatingView;
 			sourceTree = "<group>";
 		};
-		79FCC40A1E86EDA500599F31 /* ACCPhotoDataModel */ = {
+		79F807A21E87FEDA00280F40 /* ListingTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				79FCC40B1E86EDD300599F31 /* ACCPhotoDataModel.h */,
-				79FCC40C1E86EDD300599F31 /* ACCPhotoDataModel.m */,
+				79F807A31E87FEDA00280F40 /* ACCListingTableViewCell.h */,
+				79F807A41E87FEDA00280F40 /* ACCListingTableViewCell.m */,
 			);
-			name = ACCPhotoDataModel;
+			name = ListingTableViewCell;
+			path = Modules/ListingModule/View/ListingTableViewCell;
+			sourceTree = "<group>";
+		};
+		79F807A91E87FF1000280F40 /* SettingsPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				79F807AA1E87FF1000280F40 /* ACCSettingsPresenter.h */,
+				79F807AB1E87FF1000280F40 /* ACCSettingsPresenter.m */,
+			);
+			name = SettingsPresenter;
+			path = Modules/SettingsModule/Presenters/SettingsPresenter;
+			sourceTree = "<group>";
+		};
+		79F807AD1E87FF2800280F40 /* SettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				79F807AE1E87FF2800280F40 /* ACCSettingsViewController.h */,
+				79F807AF1E87FF2800280F40 /* ACCSettingsViewController.m */,
+			);
+			name = SettingsViewController;
+			path = Modules/SettingsModule/ViewControllers/SettingsViewController;
+			sourceTree = "<group>";
+		};
+		79F807B11E87FF7800280F40 /* PhotoDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				79F807B21E87FF7800280F40 /* ACCPhotoDataModel.h */,
+				79F807B31E87FF7800280F40 /* ACCPhotoDataModel.m */,
+			);
+			name = PhotoDataModel;
+			path = Modules/ListingModule/DataModels/PhotoDataModel;
+			sourceTree = "<group>";
+		};
+		79F807B41E87FF7800280F40 /* PhotoGroupDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				79F807B51E87FF7800280F40 /* ACCPhotoGroupDataModel.h */,
+				79F807B61E87FF7800280F40 /* ACCPhotoGroupDataModel.m */,
+			);
+			name = PhotoGroupDataModel;
+			path = Modules/ListingModule/DataModels/PhotoGroupDataModel;
+			sourceTree = "<group>";
+		};
+		79F807B71E87FF7800280F40 /* VenueDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				79F807B81E87FF7800280F40 /* ACCVenueDataModel.h */,
+				79F807B91E87FF7800280F40 /* ACCVenueDataModel.m */,
+			);
+			name = VenueDataModel;
+			path = Modules/ListingModule/DataModels/VenueDataModel;
+			sourceTree = "<group>";
+		};
+		79F807BA1E87FF7800280F40 /* VenueExploreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				79F807BB1E87FF7800280F40 /* ACCVenueExploreDataModel.h */,
+				79F807BC1E87FF7800280F40 /* ACCVenueExploreDataModel.m */,
+			);
+			name = VenueExploreDataModel;
+			path = Modules/ListingModule/DataModels/VenueExploreDataModel;
+			sourceTree = "<group>";
+		};
+		79F807BD1E87FF7800280F40 /* VenueGroupDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				79F807BE1E87FF7800280F40 /* ACCVenueGroupDataModel.h */,
+				79F807BF1E87FF7800280F40 /* ACCVenueGroupDataModel.m */,
+			);
+			name = VenueGroupDataModel;
+			path = Modules/ListingModule/DataModels/VenueGroupDataModel;
+			sourceTree = "<group>";
+		};
+		79F807C51E87FF9400280F40 /* BaseDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				79F807C61E87FF9400280F40 /* ACCBaseDataModel.h */,
+				79F807C71E87FF9400280F40 /* ACCBaseDataModel.m */,
+			);
+			name = BaseDataModel;
+			path = Core/DataModels/BaseDataModel;
 			sourceTree = "<group>";
 		};
 		79FCC40F1E86F24D00599F31 /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
-				79FCC4101E86F25B00599F31 /* ACCBaseDataModel */,
+				79F807C51E87FF9400280F40 /* BaseDataModel */,
 			);
 			name = DataModels;
-			sourceTree = "<group>";
-		};
-		79FCC4101E86F25B00599F31 /* ACCBaseDataModel */ = {
-			isa = PBXGroup;
-			children = (
-				79FCC4111E86F27F00599F31 /* ACCBaseDataModel.h */,
-				79FCC4121E86F27F00599F31 /* ACCBaseDataModel.m */,
-			);
-			name = ACCBaseDataModel;
-			sourceTree = "<group>";
-		};
-		79FCC4141E86F62600599F31 /* ACCVenueExploreDataModel */ = {
-			isa = PBXGroup;
-			children = (
-				79FCC4151E86F65800599F31 /* ACCVenueExploreDataModel.h */,
-				79FCC4161E86F65800599F31 /* ACCVenueExploreDataModel.m */,
-			);
-			name = ACCVenueExploreDataModel;
-			sourceTree = "<group>";
-		};
-		79FCC4181E86FABD00599F31 /* ACCVenueGroupDataModel */ = {
-			isa = PBXGroup;
-			children = (
-				79FCC4191E86FAF200599F31 /* ACCVenueGroupDataModel.h */,
-				79FCC41A1E86FAF200599F31 /* ACCVenueGroupDataModel.m */,
-			);
-			name = ACCVenueGroupDataModel;
-			sourceTree = "<group>";
-		};
-		79FCC41C1E86FC0700599F31 /* ACCPhotoGroupDataModel */ = {
-			isa = PBXGroup;
-			children = (
-				79FCC41D1E86FC3E00599F31 /* ACCPhotoGroupDataModel.h */,
-				79FCC41E1E86FC3E00599F31 /* ACCPhotoGroupDataModel.m */,
-			);
-			name = ACCPhotoGroupDataModel;
 			sourceTree = "<group>";
 		};
 		79FCC4201E870FF300599F31 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				79FCC4251E87146400599F31 /* ACCListingRatingView */,
-				79FCC4211E870FFA00599F31 /* ACCListingTableViewCell */,
+				79F8079E1E87FEDA00280F40 /* ListingRatingView */,
+				79F807A21E87FEDA00280F40 /* ListingTableViewCell */,
 			);
 			name = View;
-			sourceTree = "<group>";
-		};
-		79FCC4211E870FFA00599F31 /* ACCListingTableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				79FCC4221E87103200599F31 /* ACCListingTableViewCell.h */,
-				79FCC4231E87103200599F31 /* ACCListingTableViewCell.m */,
-			);
-			name = ACCListingTableViewCell;
-			sourceTree = "<group>";
-		};
-		79FCC4251E87146400599F31 /* ACCListingRatingView */ = {
-			isa = PBXGroup;
-			children = (
-				79FCC4261E8714A800599F31 /* ACCListingRatingView.h */,
-				79FCC4271E8714A800599F31 /* ACCListingRatingView.m */,
-				79FCC4301E872A7A00599F31 /* ACCListingRatingView.xib */,
-			);
-			name = ACCListingRatingView;
 			sourceTree = "<group>";
 		};
 		79FCC42C1E871D8000599F31 /* AppearanceController */ = {
@@ -570,24 +598,6 @@
 			);
 			name = AppearanceController;
 			path = Core/Controller/AppearanceController;
-			sourceTree = "<group>";
-		};
-		79FCC4351E87356300599F31 /* ACCSettingsViewController */ = {
-			isa = PBXGroup;
-			children = (
-				79FCC4361E8735A500599F31 /* ACCSettingsViewController.h */,
-				79FCC4371E8735A500599F31 /* ACCSettingsViewController.m */,
-			);
-			name = ACCSettingsViewController;
-			sourceTree = "<group>";
-		};
-		79FCC43B1E873F4300599F31 /* ACCSettingsPresenter */ = {
-			isa = PBXGroup;
-			children = (
-				79FCC43C1E873F7B00599F31 /* ACCSettingsPresenter.h */,
-				79FCC43D1E873F7B00599F31 /* ACCSettingsPresenter.m */,
-			);
-			name = ACCSettingsPresenter;
 			sourceTree = "<group>";
 		};
 		9E8BBCFE0769C93C56FB88CA /* Pods */ = {
@@ -688,8 +698,8 @@
 			files = (
 				79001F5E1E86722600436D56 /* LaunchScreen.storyboard in Resources */,
 				79001F5B1E86722600436D56 /* Assets.xcassets in Resources */,
-				79FCC4311E872A7A00599F31 /* ACCListingRatingView.xib in Resources */,
 				79001F591E86722600436D56 /* Main.storyboard in Resources */,
+				79F807A61E87FEDA00280F40 /* ACCListingRatingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,27 +765,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79FCC41F1E86FC3E00599F31 /* ACCPhotoGroupDataModel.m in Sources */,
-				79FCC43E1E873F7B00599F31 /* ACCSettingsPresenter.m in Sources */,
 				79001F901E86791700436D56 /* ACCListingViewController.m in Sources */,
-				79FCC4281E8714A800599F31 /* ACCListingRatingView.m in Sources */,
 				79001F971E867D1000436D56 /* ACCListingPresenter.m in Sources */,
 				79FCC4421E87449100599F31 /* ACCUserCacheService.m in Sources */,
-				79FCC4241E87103200599F31 /* ACCListingTableViewCell.m in Sources */,
-				79FCC40D1E86EDD300599F31 /* ACCPhotoDataModel.m in Sources */,
-				79FCC41B1E86FAF200599F31 /* ACCVenueGroupDataModel.m in Sources */,
+				79F807C31E87FF7800280F40 /* ACCVenueExploreDataModel.m in Sources */,
 				79F8079A1E87F49C00280F40 /* ACCSettingsConfiguration.m in Sources */,
 				79FCC42F1E871D8000599F31 /* ACCAppearanceController.m in Sources */,
+				79F807C41E87FF7800280F40 /* ACCVenueGroupDataModel.m in Sources */,
+				79F807AC1E87FF1000280F40 /* ACCSettingsPresenter.m in Sources */,
 				79001F531E86722600436D56 /* AppDelegate.m in Sources */,
-				79FCC4131E86F27F00599F31 /* ACCBaseDataModel.m in Sources */,
-				79FCC4171E86F65800599F31 /* ACCVenueExploreDataModel.m in Sources */,
+				79F807C01E87FF7800280F40 /* ACCPhotoDataModel.m in Sources */,
+				79F807C81E87FF9400280F40 /* ACCBaseDataModel.m in Sources */,
+				79F807A71E87FEDA00280F40 /* ACCListingTableViewCell.m in Sources */,
 				79FCC4341E8730A700599F31 /* UIColor+Helper.m in Sources */,
 				79001FBB1E86BA6F00436D56 /* ACCHttpService.m in Sources */,
+				79F807C11E87FF7800280F40 /* ACCPhotoGroupDataModel.m in Sources */,
 				79001FA01E8687EF00436D56 /* ACCMainViewController.m in Sources */,
 				79001FAE1E86A3D400436D56 /* UIStoryboard+Helper.m in Sources */,
+				79F807A51E87FEDA00280F40 /* ACCListingRatingView.m in Sources */,
 				79F8079D1E87F55E00280F40 /* ACCSiteConfiguration.m in Sources */,
-				79FCC4091E86D9F800599F31 /* ACCVenueDataModel.m in Sources */,
-				79FCC4381E8735A500599F31 /* ACCSettingsViewController.m in Sources */,
+				79F807C21E87FF7800280F40 /* ACCVenueDataModel.m in Sources */,
+				79F807B01E87FF2800280F40 /* ACCSettingsViewController.m in Sources */,
 				79001FB31E86A83C00436D56 /* ACCLocationService.m in Sources */,
 				79001F501E86722600436D56 /* main.m in Sources */,
 			);
