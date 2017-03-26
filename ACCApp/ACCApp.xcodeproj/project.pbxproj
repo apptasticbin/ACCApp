@@ -40,6 +40,7 @@
 		79F807C31E87FF7800280F40 /* ACCVenueExploreDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F807BC1E87FF7800280F40 /* ACCVenueExploreDataModel.m */; };
 		79F807C41E87FF7800280F40 /* ACCVenueGroupDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F807BF1E87FF7800280F40 /* ACCVenueGroupDataModel.m */; };
 		79F807C81E87FF9400280F40 /* ACCBaseDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F807C71E87FF9400280F40 /* ACCBaseDataModel.m */; };
+		79F807CF1E88089E00280F40 /* CLLocation+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F807CE1E88089E00280F40 /* CLLocation+Helper.m */; };
 		79FCC42F1E871D8000599F31 /* ACCAppearanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC42E1E871D8000599F31 /* ACCAppearanceController.m */; };
 		79FCC4341E8730A700599F31 /* UIColor+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC4331E8730A700599F31 /* UIColor+Helper.m */; };
 		79FCC4421E87449100599F31 /* ACCUserCacheService.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FCC4411E87449100599F31 /* ACCUserCacheService.m */; };
@@ -109,6 +110,8 @@
 		79F807BF1E87FF7800280F40 /* ACCVenueGroupDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCVenueGroupDataModel.m; sourceTree = "<group>"; };
 		79F807C61E87FF9400280F40 /* ACCBaseDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCBaseDataModel.h; sourceTree = "<group>"; };
 		79F807C71E87FF9400280F40 /* ACCBaseDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCBaseDataModel.m; sourceTree = "<group>"; };
+		79F807CD1E88089E00280F40 /* CLLocation+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CLLocation+Helper.h"; path = "Core/Categories/CLLocation+Helper.h"; sourceTree = "<group>"; };
+		79F807CE1E88089E00280F40 /* CLLocation+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CLLocation+Helper.m"; path = "Core/Categories/CLLocation+Helper.m"; sourceTree = "<group>"; };
 		79FCC42D1E871D8000599F31 /* ACCAppearanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCAppearanceController.h; sourceTree = "<group>"; };
 		79FCC42E1E871D8000599F31 /* ACCAppearanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCAppearanceController.m; sourceTree = "<group>"; };
 		79FCC4321E8730A700599F31 /* UIColor+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Helper.h"; path = "Core/Categories/UIColor+Helper.h"; sourceTree = "<group>"; };
@@ -418,6 +421,8 @@
 		79001FAB1E86A33D00436D56 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				79F807CD1E88089E00280F40 /* CLLocation+Helper.h */,
+				79F807CE1E88089E00280F40 /* CLLocation+Helper.m */,
 				79FCC4321E8730A700599F31 /* UIColor+Helper.h */,
 				79FCC4331E8730A700599F31 /* UIColor+Helper.m */,
 				79001FAC1E86A3D400436D56 /* UIStoryboard+Helper.h */,
@@ -774,6 +779,7 @@
 				79F807C41E87FF7800280F40 /* ACCVenueGroupDataModel.m in Sources */,
 				79F807AC1E87FF1000280F40 /* ACCSettingsPresenter.m in Sources */,
 				79001F531E86722600436D56 /* AppDelegate.m in Sources */,
+				79F807CF1E88089E00280F40 /* CLLocation+Helper.m in Sources */,
 				79F807C01E87FF7800280F40 /* ACCPhotoDataModel.m in Sources */,
 				79F807C81E87FF9400280F40 /* ACCBaseDataModel.m in Sources */,
 				79F807A71E87FEDA00280F40 /* ACCListingTableViewCell.m in Sources */,

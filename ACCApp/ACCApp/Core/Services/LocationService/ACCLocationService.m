@@ -7,6 +7,7 @@
 //
 
 #import "ACCLocationService.h"
+#import "CLLocation+Helper.h"
 #import <CoreLocation/CoreLocation.h>
 
 NSString * const ACCLocationServiceErrorDomain = @"service.location.accapp";
@@ -43,7 +44,7 @@ NSString * const ACCLocationServiceErrorDomain = @"service.location.accapp";
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
     CLLocation* location = [locations lastObject];
     if (self.updateBlock) {
-        self.updateBlock([self p_stringFromLocation:location], nil);
+        self.updateBlock([location stringValue], nil);
         self.updateBlock = nil;
     }
     [self.locationManager stopUpdatingLocation];
@@ -67,13 +68,6 @@ NSString * const ACCLocationServiceErrorDomain = @"service.location.accapp";
         self.updateBlock = nil;
     }
     [self.locationManager stopUpdatingLocation];
-}
-
-#pragma mark - Private
-
-- (NSString *)p_stringFromLocation:(CLLocation *)location {
-    CLLocationCoordinate2D locationCoordinate = location.coordinate;
-    return [NSString stringWithFormat:@"%@,%@", @(locationCoordinate.latitude), @(locationCoordinate.longitude)];
 }
 
 @end
