@@ -48,8 +48,8 @@
 - (ACCListingViewController *)p_createListingViewController {
     ACCListingPresenter *listingPresenter = [ACCListingPresenter new];
     ACCListingViewController *listingViewController =
-    [UIStoryboard instantiateViewControllerWithId:@"ACCListingViewController"
-                                     inStoryboard:@"Main"];
+    [UIStoryboard acc_instantiateViewControllerWithId:@"ACCListingViewController"
+                                         inStoryboard:@"Main"];
     
     [listingPresenter setView:(id)listingViewController];
     [listingPresenter setLocationService:(id)[ACCLocationService new]];

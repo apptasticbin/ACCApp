@@ -31,7 +31,7 @@
 
 - (void)loadSearchCategoryIndex {
     NSString *searchCategory = [self.userCacheService objectForKey:ACCSettingsSearchCategoryKey];
-    [self.view searchCategoryIndexDidUpdate:[self categoryIndexFromString:searchCategory]];
+    [self.view searchCategoryIndexDidUpdate:[self p_categoryIndexFromString:searchCategory]];
 }
 
 - (void)updateSearchRadiusValue:(NSNumber *)newValue {
@@ -40,21 +40,21 @@
 }
 
 - (void)updateSearchCategoryIndex:(NSUInteger)newCategoryIndex {
-    [self.userCacheService setObject:[self stringFromCategoryIndex:newCategoryIndex]
+    [self.userCacheService setObject:[self p_stringFromCategoryIndex:newCategoryIndex]
                               forKey:ACCSettingsSearchCategoryKey];
     [self.view searchCategoryIndexDidUpdate:newCategoryIndex];
 }
 
 #pragma mark - Private
 
-- (NSString *)stringFromCategoryIndex:(NSUInteger)index {
+- (NSString *)p_stringFromCategoryIndex:(NSUInteger)index {
     return @[ACCSettingCategoryTopPicks,
              ACCSettingCategoryFood,
              ACCSettingCategoryShops,
              ACCSettingCategoryOutdoors][index];
 }
 
-- (NSUInteger)categoryIndexFromString:(NSString *)categoryString {
+- (NSUInteger)p_categoryIndexFromString:(NSString *)categoryString {
     return [@[ACCSettingCategoryTopPicks,
               ACCSettingCategoryFood,
               ACCSettingCategoryShops,

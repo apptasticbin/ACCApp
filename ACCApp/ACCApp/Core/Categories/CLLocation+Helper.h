@@ -10,6 +10,6 @@
 
 @interface CLLocation (Helper)
 
-- (NSString *)stringValue;
+- (NSString *)acc_stringValue;
 
 @end

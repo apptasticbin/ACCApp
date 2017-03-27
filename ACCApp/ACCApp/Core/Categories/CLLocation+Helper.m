@@ -10,7 +10,7 @@
 
 @implementation CLLocation (Helper)
 
-- (NSString *)stringValue {
+- (NSString *)acc_stringValue {
     CLLocationCoordinate2D locationCoordinate = self.coordinate;
     return [NSString stringWithFormat:@"%@,%@",
             @(locationCoordinate.latitude),

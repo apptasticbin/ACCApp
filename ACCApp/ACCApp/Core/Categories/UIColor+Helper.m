@@ -10,7 +10,7 @@
 
 @implementation UIColor (Helper)
 
-+ (UIColor *)colorFromHexString:(NSString *)hexString {
++ (UIColor *)acc_colorFromHexString:(NSString *)hexString {
     if (hexString.length == 6) {
         unsigned rv = 0, gv = 0, bv = 0;
         [[NSScanner scannerWithString:[hexString substringWithRange:NSMakeRange(0, 2)]] scanHexInt:&rv];

@@ -16,8 +16,8 @@
 
 - (void)presentSettingsModelFromViewController:(UIViewController *)viewController {
     ACCSettingsViewController *settingsViewController =
-    [UIStoryboard instantiateViewControllerWithId:@"ACCSettingsViewController"
-                                     inStoryboard:@"Main"];
+    [UIStoryboard acc_instantiateViewControllerWithId:@"ACCSettingsViewController"
+                                         inStoryboard:@"Main"];
     ACCSettingsPresenter *settingsPresenter = [ACCSettingsPresenter new];
     
     [settingsViewController setPresenter:(id)settingsPresenter];

@@ -10,8 +10,8 @@
 
 @implementation UIStoryboard (Helper)
 
-+ (UIViewController *)instantiateViewControllerWithId:(NSString *)viewControllerId
-                                         inStoryboard:(NSString *)storyboardName {
++ (UIViewController *)acc_instantiateViewControllerWithId:(NSString *)viewControllerId
+                                             inStoryboard:(NSString *)storyboardName {
     UIStoryboard *storyboard = [self storyboardWithName:storyboardName
                                                  bundle:[NSBundle mainBundle]];
     return [storyboard instantiateViewControllerWithIdentifier:viewControllerId];

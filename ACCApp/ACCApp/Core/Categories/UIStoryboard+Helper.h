@@ -10,7 +10,7 @@
 
 @interface UIStoryboard (Helper)
 
-+ (__kindof UIViewController *)instantiateViewControllerWithId:(NSString *)viewControllerId
-                                                  inStoryboard:(NSString *)storyboardName;
++ (__kindof UIViewController *)acc_instantiateViewControllerWithId:(NSString *)viewControllerId
+                                                      inStoryboard:(NSString *)storyboardName;
 
 @end

@@ -44,7 +44,7 @@ NSString * const ACCLocationServiceErrorDomain = @"service.location.accapp";
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
     CLLocation* location = [locations lastObject];
     if (self.updateBlock) {
-        self.updateBlock([location stringValue], nil);
+        self.updateBlock([location acc_stringValue], nil);
         self.updateBlock = nil;
     }
     [self.locationManager stopUpdatingLocation];
