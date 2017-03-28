@@ -10,6 +10,8 @@
 #import "ACCSiteConfiguration.h"
 #import <AFNetworking.h>
 
+static NSTimeInterval kACCHttpServiceTimeOutForResource = 5.0f;
+
 @interface ACCHttpService ()
 
 @property (nonatomic, strong) AFHTTPSessionManager *sessionManager;
@@ -22,8 +24,10 @@
 {
     self = [super init];
     if (self) {
-        _sessionManager =
-        [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:ACCFourSquareBaseURL]];
+        NSURLSessionConfiguration *SessionConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];
+        SessionConfiguration.timeoutIntervalForResource = kACCHttpServiceTimeOutForResource;
+        _sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:ACCFourSquareBaseURL]
+                                                   sessionConfiguration:SessionConfiguration];
     }
     return self;
 }

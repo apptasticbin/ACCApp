@@ -99,6 +99,9 @@
     
     id failureBlock = ^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"[ERROR] Failed to fetch venues.");
+        if (complete) {
+            complete(nil, error);
+        }
         [weakSelf p_clearCurrentTask];
     };
     

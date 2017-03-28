@@ -26,7 +26,7 @@ static NSString *ACCListingViewControllerCellId = @"ACCListingViewControllerCell
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self p_setupTableView];
+    [self p_setupViewController];
     [self p_setupNotification];
     [self p_loadNearbyVenues];
 }
@@ -63,7 +63,7 @@ static NSString *ACCListingViewControllerCellId = @"ACCListingViewControllerCell
 
 #pragma mark - Private
 
-- (void)p_setupTableView {
+- (void)p_setupViewController {
     [self setTitle:@"ACCApp"];
     [self setRefreshControl:[UIRefreshControl new]];
     [self.refreshControl addTarget:self
